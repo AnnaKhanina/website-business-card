@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import crown from '../assets/img/icons/crown.png';
 import telegram from '../assets/img/icons/telegram.svg';
@@ -9,21 +9,6 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState('home');
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-
-    window.addEventListener('scroll', onScroll);
-
-    return () => window.removeEventListener('scroll', onScroll);
-  }, []);
 
   const onUpdateActiveLink = (value) => {
     setActiveLink(value);
@@ -31,7 +16,7 @@ export const NavBar = () => {
 
   return (
     <Router>
-      <Navbar expand="md" className={scrolled ? 'scrolled' : ''}>
+      <Navbar expand="md" className="transition-navbar">
         <Container>
           <Navbar.Brand href="/">
             <img className="navbar-logo" src={crown} alt="logo" />
@@ -41,7 +26,7 @@ export const NavBar = () => {
             <span className="navbar-toggler-icon"></span>
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ms-auto">
+            <Nav className="ms-auto align-items-center">
               <Nav.Link
                 href="#home"
                 className={
@@ -72,8 +57,9 @@ export const NavBar = () => {
                 Наші партнери
               </Nav.Link>
             </Nav>
-            <span className="navbar-text">
-              <div className="social-icon">
+
+            <div className="navbar-media d-flex align-items-center">
+              <div className="social-icon d-flex align-items-center">
                 <a
                   href="https://web.telegram.org/k/"
                   target="_blank"
@@ -81,7 +67,6 @@ export const NavBar = () => {
                 >
                   <img src={telegram} alt="telegram" />
                 </a>
-
                 <a
                   href="https://www.viber.com/ua/"
                   target="_blank"
@@ -98,11 +83,11 @@ export const NavBar = () => {
                 </a>
               </div>
               <HashLink to="#connect">
-                <button className="vvd">
-                  <span className="vvd-text">З'вязок</span>
+                <button className="navbar-btn">
+                  <span className="navbar-btn-text">З'вязок</span>
                 </button>
               </HashLink>
-            </span>
+            </div>
           </Navbar.Collapse>
         </Container>
       </Navbar>
