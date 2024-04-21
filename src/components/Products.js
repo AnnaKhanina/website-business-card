@@ -1,5 +1,7 @@
 import { Container, Row, Col, Tab, Nav } from 'react-bootstrap';
 import { BeerCard } from './BeerCard';
+import { CyderCard } from './CyderCard';
+import { WineCard } from './WineCard';
 import { beers } from '../products/beers';
 import { cyders } from '../products/cyders';
 import { wines } from '../products/wines';
@@ -53,14 +55,14 @@ export const Products = () => {
                       <Tab.Pane eventKey="second">
                         <Row>
                           {cyders.map((cyder, index) => {
-                            return <BeerCard key={index} {...cyder} />;
+                            return <CyderCard key={index} {...cyder} />;
                           })}
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
                         <Row>
                           {wines.map((wine, index) => {
-                            return <BeerCard key={index} {...wine} />;
+                            return <WineCard key={index} {...wine} />;
                           })}
                         </Row>
                       </Tab.Pane>

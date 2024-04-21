@@ -7,7 +7,7 @@ export const Partners = () => {
     <section className="partners" id="partners">
       <Container>
         <Row className="align-items-center">
-          <Col size={12}>
+          <Col>
             <div>
               <h2>Наші партнери</h2>
               <p>Відкрити до співпраці</p>

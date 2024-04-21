@@ -3,12 +3,11 @@ import crown from '../assets/img/icons/crown.png';
 import glass from '../assets/img/icons/glass.png';
 import barley from '../assets/img/icons/barley.png';
 
-export const BeerCard = ({
+export const CyderCard = ({
   title,
-  beerTitle,
-  beerStrength,
-  beerDensity,
-  beerFactory,
+  cyderTitle,
+  cyderStrength,
+  cyderFactory,
   description,
   imgUrl,
 }) => {
@@ -16,15 +15,14 @@ export const BeerCard = ({
     <Col size={12} sm={6} md={4}>
       <div className="beer-imgbx">
         <img src={imgUrl} alt="beer card" />
-        <p className="beer-title">{beerTitle}</p>
+        <p className="beer-title">{cyderTitle}</p>
         <p className="beer-strength">
           <span className="strength">Міцність: </span>
-          {beerStrength}. <span className="density">Щільність: </span>
-          {beerDensity}
+          {cyderStrength}
         </p>
         <p className="beer-factory">
           <span className="factory">Виробник: </span>
-          {beerFactory}
+          {cyderFactory}
         </p>
         <div className="beer-txtx">
           <h4>{title}</h4>
