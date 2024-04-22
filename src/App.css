@@ -102,7 +102,30 @@ p.danger {
 
 /*  Modal */
 
+.modal-content {
+  margin: auto;
+  max-width: 600px; 
+  background-color: #2c2c2c;
+}
 
+.modal-dialog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.modal {
+  overflow-y: auto;  
+}
+
+.modal-body {
+  color: #121212;
+}
+
+/*.modal-title {
+  color: #121212;
+} */
 
 /************ Navbar Css ************/
 
@@ -132,8 +155,6 @@ img.navbar-logo {
 .navbar-brand h3:focus {
   color: #fff;
 }
-
-
 
 nav.navbar .navbar-toggler-icon {
   width: 24px;
@@ -380,7 +401,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   margin-right: 0;
 }
  
-.banner button {
+.banner span {
   color: #000000a6;
   font-weight: 700;
   font-size: 20px;
@@ -390,19 +411,19 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   align-items: center;
 }
 
-.banner button:hover,
-.banner button:focus {
+.banner span:hover,
+.banner span:focus {
   color: #fff;
 }
 
-.banner button svg {
+.banner span svg {
   font-size: 25px;
   margin-left: 10px;
   transition: 0.3s ease-in-out;
   line-height: 1;
 }
 
-.banner button:hover svg {
+.banner span:hover svg {
   margin-left: 25px;
 }
 

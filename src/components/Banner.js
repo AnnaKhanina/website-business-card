@@ -1,4 +1,5 @@
 import { Container, Row, Col } from 'react-bootstrap';
+import { ModalWindow } from '../components/Modal';
 import {
   ArrowRightCircle,
   TelephoneFill,
@@ -82,7 +83,7 @@ export const Banner = () => {
                       </li>
                     </ul>
                   </div>
-                  <button onClick={() => console.log('connect')}>
+                  <span>
                     Наливаємо за адресою:
                     <ArrowRightCircle size={30} />
                     <a
@@ -93,7 +94,8 @@ export const Banner = () => {
                     >
                       м.Хмельницький, вул.Залізняка 8/3
                     </a>
-                  </button>
+                  </span>
+                  <ModalWindow />
                 </div>
               )}
             </TrackVisibility>
