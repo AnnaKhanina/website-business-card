@@ -19,12 +19,13 @@ export const WineCard = ({
         <p className="beer-title">{wineTitle}</p>
         <p className="beer-strength">
           <span className="strength">Міцність: </span>
-          {wineStrength}. <span className="density">Цукор: </span>
-          {wineSugar}
+          <span className="strength-beer">{wineStrength}. </span>
+          <span className="density">Цукор: </span>
+          <span className="sugar">{wineSugar}</span>
         </p>
         <p className="beer-factory">
           <span className="factory">Виробник: </span>
-          {wineFactory}
+          <span className="factory-beer">{wineFactory}</span>
         </p>
         <div className="beer-txtx">
           <h4>{title}</h4>

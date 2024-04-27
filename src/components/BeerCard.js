@@ -17,14 +17,15 @@ export const BeerCard = ({
       <div className="beer-imgbx">
         <img src={imgUrl} alt="beer card" />
         <p className="beer-title">{beerTitle}</p>
-        <p className="beer-strength">
+        <p>
           <span className="strength">Міцність: </span>
-          {beerStrength}. <span className="density">Щільність: </span>
-          {beerDensity}
+          <span className="strength-beer">{beerStrength}. </span>
+          <span className="density">Щільність: </span>
+          <span className="density-beer">{beerDensity}</span>
         </p>
         <p className="beer-factory">
           <span className="factory">Виробник: </span>
-          {beerFactory}
+          <span className="factory-beer">{beerFactory}</span>
         </p>
         <div className="beer-txtx">
           <h4>{title}</h4>

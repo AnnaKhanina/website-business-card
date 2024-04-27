@@ -13,16 +13,19 @@ const CustomModal = ({ onClose }) => {
 
   return (
     <Modal show={true} onHide={handleNoClick}>
-      <Modal.Header closeButton>
-        {/* <Modal.Title>Вам вже є 18 років?</Modal.Title> */}
+      <Modal.Header>
+        <Modal.Title>Вам вже є 18 років?</Modal.Title>
       </Modal.Header>
-      <Modal.Body>Вам вже є 18 років?</Modal.Body>
       <Modal.Footer>
-        <Button variant="secondary" onClick={handleNoClick}>
-          Нет
+        <Button
+          variant="warning"
+          onClick={handleYesClick}
+          className="modal-btn"
+        >
+          Так
         </Button>
-        <Button variant="primary" onClick={handleYesClick}>
-          Да
+        <Button variant="secondary" onClick={handleNoClick}>
+          Ні
         </Button>
       </Modal.Footer>
     </Modal>
@@ -35,7 +38,7 @@ export const ModalWindow = () => {
   const handleCloseModal = (isOver18) => {
     setShowModal(false);
     if (!isOver18) {
-      window.location.href = 'https://example.com';
+      window.location.href = 'https://www.google.com/';
     }
   };
 

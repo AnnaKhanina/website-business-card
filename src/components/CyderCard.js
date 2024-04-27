@@ -18,11 +18,11 @@ export const CyderCard = ({
         <p className="beer-title">{cyderTitle}</p>
         <p className="beer-strength">
           <span className="strength">Міцність: </span>
-          {cyderStrength}
+          <span className="strength-beer">{cyderStrength}</span>
         </p>
         <p className="beer-factory">
           <span className="factory">Виробник: </span>
-          {cyderFactory}
+          <span className="factory-beer">{cyderFactory}</span>
         </p>
         <div className="beer-txtx">
           <h4>{title}</h4>

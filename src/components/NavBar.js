@@ -16,7 +16,7 @@ export const NavBar = () => {
 
   return (
     <Router>
-      <Navbar expand="md" className="transition-navbar">
+      <Navbar expand="lg" className="transition-navbar">
         <Container>
           <Navbar.Brand href="/">
             <img className="navbar-logo" src={crown} alt="logo" />
