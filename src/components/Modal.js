@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
@@ -34,9 +34,20 @@ const CustomModal = ({ onClose }) => {
 
 export const ModalWindow = () => {
   const [showModal, setShowModal] = useState(true);
+  const [confirmedOver18, setConfirmedOver18] = useState(false);
+
+  useEffect(() => {
+    const isOver18 = localStorage.getItem('confirmedOver18');
+    if (isOver18) {
+      setConfirmedOver18(true);
+      setShowModal(false);
+    }
+  }, []);
 
   const handleCloseModal = (isOver18) => {
     setShowModal(false);
+    setConfirmedOver18(isOver18);
+    localStorage.setItem('confirmedOver18', isOver18);
     if (!isOver18) {
       window.location.href = 'https://www.google.com/';
     }
@@ -44,7 +55,9 @@ export const ModalWindow = () => {
 
   return (
     <div className="app">
-      {showModal && <CustomModal onClose={handleCloseModal} />}
+      {!confirmedOver18 && showModal && (
+        <CustomModal onClose={handleCloseModal} />
+      )}
     </div>
   );
 };
