@@ -19,7 +19,7 @@ app.post('/api/contact', async (req, res) => {
   try {
     await transport.sendMail({
       from: email,
-      to: process.env.EMAIL_USER,
+      to: '6d21c2fc0b-bfc600@inbox.mailtrap.io',
       subject: 'Contact Form Submission - Beerking',
       html: `<p>Name: ${firstName} ${lastName}</p>
              <p>Email: ${email}</p>
