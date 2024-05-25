@@ -16,7 +16,7 @@ export default async function handler(req, res) {
     try {
       await transport.sendMail({
         from: email,
-        to: process.env.EMAIL_USER,
+        to: process.env.MAILTRAP_URL,
         subject: 'Contact Form Submission - Beerking',
         html: `<p>Name: ${firstName} ${lastName}</p>
                <p>Email: ${email}</p>
