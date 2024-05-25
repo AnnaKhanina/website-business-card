@@ -29,12 +29,12 @@ app.post('/api/contact', async (req, res) => {
 
     res
       .status(200)
-      .json({ success: true, message: 'Message sent successfully' });
+      .json({ success: true, message: 'Повідомлення успішно надіслано' });
   } catch (error) {
     console.error('Error sending email:', error);
     res.status(500).json({
       success: false,
-      message: 'Something went wrong, please try again later.',
+      message: 'Щось пішло не так, спробуйте пізніше.',
     });
   }
 });

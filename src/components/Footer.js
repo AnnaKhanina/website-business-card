@@ -1,5 +1,4 @@
 import { Container } from 'react-bootstrap';
-
 import crown from '../assets/img/icons/crown.png';
 import telegram from '../assets/img/icons/telegram.svg';
 import viber from '../assets/img/icons/viber.svg';
@@ -13,7 +12,19 @@ export const Footer = () => {
           <img className="navbar-logo" src={crown} alt="logo" />
           <h3>BEERKING</h3>
           <ul className="footer-list">
-            <li className="footer-item"></li>
+            <li className="footer-item">
+              <form id="subscribe-form" action="/api/subscribe" method="post">
+                <label htmlFor="email">Підписуйтесь на новини:</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Введіть Ваш email"
+                  required
+                />
+                <button type="submit">Підписаться</button>
+              </form>
+            </li>
             <li className="footer-item">
               <div className="footer-social">
                 <p className="footer-text">Замовити онлайн</p>
