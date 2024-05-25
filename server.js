@@ -11,15 +11,17 @@ app.post('/api/contact', async (req, res) => {
     host: 'sandbox.smtp.mailtrap.io',
     port: 2525,
     auth: {
-      user: process.env.MAILTRAP_USER,
-      pass: process.env.MAILTRAP_PASSWORD,
+      // user: process.env.MAILTRAP_USER,
+      // pass: process.env.MAILTRAP_PASSWORD,
+      user: '9895b2fec7b806',
+      pass: '231603bc7596ac',
     },
   });
 
   try {
     await transport.sendMail({
       from: email,
-      to: '6d21c2fc0b-bfc600@inbox.mailtrap.io',
+      to: 'https://mailtrap.io/inboxes/2831124/messages',
       subject: 'Contact Form Submission - Beerking',
       html: `<p>Name: ${firstName} ${lastName}</p>
              <p>Email: ${email}</p>
