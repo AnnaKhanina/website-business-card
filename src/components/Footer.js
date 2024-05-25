@@ -13,17 +13,19 @@ export const Footer = () => {
           <h3>BEERKING</h3>
           <ul className="footer-list">
             <li className="footer-item">
-              <form id="subscribe-form" action="/api/subscribe" method="post">
-                <label htmlFor="email">Підписуйтесь на новини:</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Введіть Ваш email"
-                  required
-                />
-                <button type="submit">Підписаться</button>
-              </form>
+              <div className="footer-social">
+                <form id="subscribe-form" action="/api/subscribe" method="post">
+                  <label htmlFor="email">Підписуйтесь на новини:</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Введіть Ваш email"
+                    required
+                  />
+                  <button type="submit">Підписатися</button>
+                </form>
+              </div>
             </li>
             <li className="footer-item">
               <div className="footer-social">
@@ -45,7 +47,7 @@ export const Footer = () => {
                     <img src={viber} alt="viber" />
                   </a>
                   <a
-                    href="https://www.instagram.com/"
+                    href="https://www.instagram.com/beer_king_market?igsh=MTJmZHRlMmd1Y2Ywag=="
                     target="_blank"
                     rel="noreferrer"
                   >

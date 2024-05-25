@@ -75,7 +75,7 @@ export const NavBar = () => {
                   <img src={viber} alt="viber" />
                 </a>
                 <a
-                  href="https://www.instagram.com/"
+                  href="https://www.instagram.com/beer_king_market?igsh=MTJmZHRlMmd1Y2Ywag=="
                   target="_blank"
                   rel="noreferrer"
                 >
