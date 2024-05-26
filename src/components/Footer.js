@@ -18,18 +18,19 @@ export const Footer = () => {
                   <label htmlFor="email" className="label-text">
                     Підписуйтесь на новини
                   </label>
-                  <div className="footer-form"></div>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Введіть Ваш email"
-                    required
-                    className="footer-input"
-                  />
-                  <button type="submit" className="footer-btn">
-                    <span className="navbar-btn-text">Підписатися</span>
-                  </button>
+                  <div className="footer-form">
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="Введіть Ваш email"
+                      required
+                      className="footer-input"
+                    />
+                    <button type="submit" className="footer-btn">
+                      <span className="navbar-btn-text">Підписатися</span>
+                    </button>
+                  </div>
                 </form>
               </div>
             </li>
