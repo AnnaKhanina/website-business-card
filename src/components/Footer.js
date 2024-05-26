@@ -13,7 +13,7 @@ export const Footer = () => {
           <h3>BEERKING</h3>
           <ul className="footer-list">
             <li className="footer-item">
-              {/* <div className="footer-social">
+              <div className="footer-social">
                 <form id="subscribe-form" action="/api/subscribe" method="post">
                   <label htmlFor="email" className="footer-text">
                     Підписуйтесь на новини:
@@ -25,32 +25,11 @@ export const Footer = () => {
                     name="email"
                     placeholder="Введіть Ваш email"
                     required
+                    className="footer-input"
                   />
-                  <button type="submit" className="navbar-btn">
+                  <button type="submit" className="footer-btn">
                     <span className="navbar-btn-text">Підписатися</span>
                   </button>
-                </form>
-              </div> */}
-              <div className="newsletter-status">
-                <form
-                  id="subscribe-form"
-                  action="/api/subscribe"
-                  method="post"
-                  className="new-email-form"
-                >
-                  <div className="new-email-bx">
-                    <label htmlFor="email" className="footer-text">
-                      Підписуйтесь на новини
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      placeholder="Введіть Ваш email"
-                      required
-                    />
-                    <button type="submit">Підписатися</button>
-                  </div>
                 </form>
               </div>
             </li>

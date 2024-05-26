@@ -973,16 +973,16 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   right: 0;
 }
 
-.new-email-bx input {
+.footer-input {
   width: 100%;
   color: #121212;
   font-weight: 500;
-  background: transparent;
-  border: 0;
+  background: #fff;
+  border-radius: 20px;
   padding: 0 15px;
 }
 
-.new-email-bx button {
+.footer-btn {
   background: rgb(15, 15, 15);
   background: linear-gradient(0deg, rgba(15, 15, 15, 1) 5%, rgba(163, 161, 147, 1) 91%);
   padding: 15px 7px;
@@ -993,9 +993,9 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   border-radius: 18px;
 }
 
-.new-email-bx button:hover,
-.new-email-bx button:focus {
-  color: #121212;
+.footer-btn:hover,
+.footer-btn:focus {
+  color: gold;
   transition: 0.3s ease-in-out;
 }
 
