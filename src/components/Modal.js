@@ -49,7 +49,7 @@ export const ModalWindow = () => {
     setConfirmedOver18(isOver18);
     localStorage.setItem('confirmedOver18', isOver18);
     if (!isOver18) {
-      window.location.href = 'https://www.google.com/';
+      window.location.replace('https://www.google.com/');
     }
   };
 
