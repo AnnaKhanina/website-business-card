@@ -836,13 +836,24 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   border-radius: 55px;  
 }
 
+.label-text {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 1.2em;
+  font-size: 16px;
+  color: gold;
+  margin-bottom: 16px;
+}
+
 .footer-form {
   display: flex;
   flex-direction: row;
+  gap: 8px;
+  margin-bottom: 16px;
 }
 
 .footer-input {
-  width: 60%;
+  width: 70%;
   color: #121212;
   font-weight: 500;
   background: #fff;
@@ -879,6 +890,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 .footer-social-icon {
   display: flex;
   justify-content: center;
+  margin-bottom: 16px;
 }
 
 .footer-social-icon a { 

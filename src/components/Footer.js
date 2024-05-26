@@ -15,7 +15,7 @@ export const Footer = () => {
             <li className="footer-item">
               <div className="footer-social">
                 <form id="subscribe-form" action="/api/subscribe" method="post">
-                  <label htmlFor="email" className="footer-text">
+                  <label htmlFor="email" className="label-text">
                     Підписуйтесь на новини
                   </label>
                   <div className="footer-form"></div>
