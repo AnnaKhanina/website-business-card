@@ -16,7 +16,7 @@ export const Footer = () => {
               <div className="footer-social">
                 <form id="subscribe-form" action="/api/subscribe" method="post">
                   <label htmlFor="email" className="footer-text">
-                    Підписуйтесь на новини:
+                    Підписуйтесь на новини
                   </label>
                   <div className="footer-form"></div>
                   <input

@@ -842,12 +842,13 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 }
 
 .footer-input {
-  width: 50%;
+  width: 60%;
   color: #121212;
   font-weight: 500;
   background: #fff;
-  border-radius: 20px;
-  padding: 0 15px;
+  border-radius: 18px;
+  padding: 15px 7px;
+  letter-spacing: 0.5px;
 }
 
 .footer-btn {
