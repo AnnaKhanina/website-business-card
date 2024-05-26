@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { Container, Spinner } from 'react-bootstrap';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import crown from '../assets/img/icons/crown.png';
 import telegram from '../assets/img/icons/telegram.svg';
 import viber from '../assets/img/icons/viber.svg';
@@ -9,23 +11,19 @@ import instagram from '../assets/img/icons/instagram.svg';
 export const Footer = () => {
   const [email, setEmail] = useState('');
   const [loading, setLoading] = useState(false);
-  const [success, setSuccess] = useState(false);
-  const [error, setError] = useState('');
 
   const handleSubmit = async (event) => {
     event.preventDefault();
     setLoading(true);
-    setError('');
-    setSuccess(false);
 
     try {
       const response = await axios.post('/api/subscribe', { email });
       if (response.status === 200) {
-        setSuccess(true);
+        toast.success('Ви успішно подписалися на наши новини!');
         setEmail('');
       }
     } catch (err) {
-      setError('Помилка при відправці. Спробуйте знову.');
+      toast.error('Помилка при відправці. Спробуйте знову.');
     } finally {
       setLoading(false);
     }
@@ -68,12 +66,6 @@ export const Footer = () => {
                         )}
                       </span>
                     </button>
-                    {success && (
-                      <p className="success-message">
-                        Ви успішно підписалися на наші новини!
-                      </p>
-                    )}
-                    {error && <p className="error-message">{error}</p>}
                   </div>
                 </form>
               </div>
@@ -114,6 +106,7 @@ export const Footer = () => {
           </p>
         </div>
       </Container>
+      <ToastContainer />
     </footer>
   );
 };
