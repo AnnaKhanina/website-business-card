@@ -848,6 +848,9 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 .footer-form {
   display: flex;
   flex-direction: row;  
+  gap: 16px;
+  justify-content: center;
+  margin-bottom: 16px;
 }
 
 .footer-input {
@@ -957,11 +960,14 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 
 @media (min-width: 768px) {
   .footer-social {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   } 
+  .footer-form {
+    gap: 8px;
+  }
 }
 
 
