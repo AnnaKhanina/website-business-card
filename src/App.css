@@ -854,7 +854,6 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 }
 
 .footer-input {
-  /* width: 70%; */
   color: #121212;
   font-weight: 500;
   background: #fff;
@@ -949,14 +948,20 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   }
 
   .footer-item {
-    margin-right: 0;    
-    /* margin-bottom: 10px;   */
+    margin-right: 0;      
    } 
 
    .footer-social-icon {
     margin-bottom: 20px;
   } 
 } 
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .footer-input {
+    padding: 9px 4px;
+  }
+}
+
 
 @media (min-width: 768px) {
   .footer-social {

@@ -1,10 +1,36 @@
-import { Container } from 'react-bootstrap';
+import React, { useState } from 'react';
+import axios from 'axios';
+import { Container, Spinner } from 'react-bootstrap';
 import crown from '../assets/img/icons/crown.png';
 import telegram from '../assets/img/icons/telegram.svg';
 import viber from '../assets/img/icons/viber.svg';
 import instagram from '../assets/img/icons/instagram.svg';
 
 export const Footer = () => {
+  const [email, setEmail] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState('');
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    setLoading(true);
+    setError('');
+    setSuccess(false);
+
+    try {
+      const response = await axios.post('/api/subscribe', { email });
+      if (response.status === 200) {
+        setSuccess(true);
+        setEmail('');
+      }
+    } catch (err) {
+      setError('Помилка при відправці. Спробуйте знову.');
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <footer className="footer">
       <Container>
@@ -14,7 +40,7 @@ export const Footer = () => {
           <ul className="footer-list">
             <li className="footer-item">
               <div className="footer-social">
-                <form id="subscribe-form" action="/api/subscribe" method="post">
+                <form id="subscribe-form" onSubmit={handleSubmit}>
                   <label htmlFor="email" className="label-text">
                     Підписуйтесь на новини
                   </label>
@@ -23,13 +49,31 @@ export const Footer = () => {
                       type="email"
                       id="email"
                       name="email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
                       placeholder="Введіть Ваш email"
                       required
                       className="footer-input"
                     />
-                    <button type="submit" className="footer-btn">
-                      <span className="navbar-btn-text">Підписатися</span>
+                    <button
+                      type="submit"
+                      disabled={loading}
+                      className="footer-btn"
+                    >
+                      <span className="navbar-btn-text">
+                        {loading ? (
+                          <Spinner as="span" animation="border" size="sm" />
+                        ) : (
+                          'Підписатися'
+                        )}
+                      </span>
                     </button>
+                    {success && (
+                      <p className="success-message">
+                        Ви успішно підписалися на наші новини!
+                      </p>
+                    )}
+                    {error && <p className="error-message">{error}</p>}
                   </div>
                 </form>
               </div>
