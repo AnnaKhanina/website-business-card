@@ -9,6 +9,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ScrollToTopButton from './components/ScrollToTopButton';
 import ScrollToBottomButton from './components/ScrollToBottomButton';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
       <Footer />
       <ScrollToTopButton />
       <ScrollToBottomButton />
+      <ToastContainer containerId="main-toast" />
+      <ToastContainer containerId="footer-toast" />
     </div>
   );
 }
