@@ -37,7 +37,7 @@ export const Contact = () => {
         body: JSON.stringify(formDetails),
       });
       setButtonText('Відправити');
-      let result = await response.json();
+      // let result = await response.json();
       setFormDetails(formInitialDetails);
       if (response.ok) {
         toast.success('Повідомлення успішно надіслано');
@@ -127,8 +127,8 @@ export const Contact = () => {
                             onFormUpdate('message', e.target.value)
                           }
                         ></textarea>
-                        <button className="contact-btn" type="submit">
-                          <span className="contact-btn-text">{buttonText}</span>
+                        <button className="navbar-btn" type="submit">
+                          <span className="navbar-btn-text">{buttonText}</span>
                         </button>
                       </Col>
                     </Row>

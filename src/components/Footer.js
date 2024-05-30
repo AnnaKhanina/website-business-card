@@ -56,7 +56,7 @@ export const Footer = () => {
                     <button
                       type="submit"
                       disabled={loading}
-                      className="footer-btn"
+                      className="navbar-btn"
                     >
                       <span className="navbar-btn-text">
                         {loading ? (
@@ -72,7 +72,7 @@ export const Footer = () => {
             </li>
             <li className="footer-item">
               <div className="footer-social">
-                <p className="footer-text">Замовити онлайн</p>
+                <p className="footer-text">Ми в соцмережах</p>
                 <div className="footer-social-icon">
                   <a
                     href="https://web.telegram.org/k/"

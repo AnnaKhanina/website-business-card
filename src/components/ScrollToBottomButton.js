@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from 'react-bootstrap';
-// import './ScrollButtons.css';
 
 const ScrollToBottomButton = () => {
   const [isVisible, setIsVisible] = useState(false);
