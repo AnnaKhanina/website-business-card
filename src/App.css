@@ -797,39 +797,30 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   position: relative;
 }
 
-.contact-btn-text:hover,
-.contact-btn-text:focus {
-  color:#fff;
-}
-
 .contact-btn:hover,
 .contact-btn:focus {
   color: #2c2c2c; 
-  /* border-radius: 6px; */
+  border-radius: 6px;
   transition: 0.3s ease-in-out;
 }
 
 .contact-btn::before {
   content: "";
   background: #fff;  
-  width: 0%;
+  width: 0;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: 0;
   transition: 0.3s ease-in-out;
   border-radius: 6px;
 }
 
 .contact-btn:hover::before {
-  /* width: 100%;
-  border-radius: 35px;
-  transition: 0.3s ease-in-out; */
-  content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
+  width: 100%;
+  border-radius: 6px;
+  transition: 0.3s ease-in-out;
  } 
 
 /************ Footer Css ************/
