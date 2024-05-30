@@ -167,8 +167,8 @@
 
 import React, { useState } from 'react';
 import axios from 'axios';
-// import { Container, Row, Col, Spinner } from 'react-bootstrap';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Spinner } from 'react-bootstrap';
+
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import contactImg from '../assets/img/logo-beerking1.png';
@@ -187,6 +187,7 @@ export const Contact = () => {
   const [formDetails, setFormDetails] = useState(formInitialDetails);
   const [buttonText, setButtonText] = useState('Відправити');
   // const [status, setStatus] = useState({});
+  const [loading, setLoading] = useState(false);
 
   const onFormUpdate = (category, value) => {
     setFormDetails({
@@ -197,6 +198,7 @@ export const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
     setButtonText('Відправлення...');
     try {
       let response = await axios.post('/api/contact', formDetails);
@@ -297,8 +299,18 @@ export const Contact = () => {
                             onFormUpdate('message', e.target.value)
                           }
                         ></textarea>
-                        <button className="contact-btn" type="submit">
-                          <span className="contact-btn-text">{buttonText}</span>
+                        <button
+                          className="contact-btn"
+                          type="submit"
+                          disabled={loading}
+                        >
+                          <span className="contact-btn-text">
+                            {loading ? (
+                              <Spinner as="span" animation="border" size="sm" />
+                            ) : (
+                              { buttonText }
+                            )}
+                          </span>
                         </button>
                       </Col>
                     </Row>
