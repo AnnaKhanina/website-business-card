@@ -167,7 +167,6 @@ export const Contact = () => {
 
   const [formDetails, setFormDetails] = useState(formInitialDetails);
   const [buttonText, setButtonText] = useState('Відправити');
-  // const [status, setStatus] = useState({});
   const [loading, setLoading] = useState(false);
 
   const onFormUpdate = (category, value) => {
@@ -184,7 +183,6 @@ export const Contact = () => {
     try {
       let response = await axios.post('/api/contact', formDetails);
       setButtonText('Відправити');
-      // let result = response.data;
       setFormDetails(formInitialDetails);
       if (response.status === 200) {
         toast.success('Повідомлення успішно надіслано', {
@@ -293,7 +291,7 @@ export const Contact = () => {
                             {loading ? (
                               <Spinner as="span" animation="border" size="sm" />
                             ) : (
-                              'Відправити'
+                              { buttonText }
                             )}
                           </span>
                         </button>
