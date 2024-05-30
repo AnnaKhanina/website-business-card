@@ -797,6 +797,11 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   position: relative;
 }
 
+.contact-btn-text:hover,
+.contact-btn-text:focus {
+  color:#fff;
+}
+
 .contact-btn:hover,
 .contact-btn:focus {
   color: #2c2c2c; 
@@ -806,7 +811,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 
 .contact-btn::before {
   content: "";
-  background-color: #fff;  
+  background: #fff;  
   width: 0%;
   height: 100%;
   position: absolute;
