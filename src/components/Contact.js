@@ -165,12 +165,11 @@
 //   );
 // };
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import contactImg from '../assets/img/logo-beerking1.png';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import clsx from 'clsx';
 
 export const Contact = () => {
   const formInitialDetails = {
@@ -242,6 +241,11 @@ export const Contact = () => {
     }
   };
 
+  // Проверка двойного рендеринга
+  useEffect(() => {
+    console.log('Component is rendered');
+  }, []);
+
   return (
     <section className="contact" id="connect">
       <Container>
@@ -262,9 +266,7 @@ export const Contact = () => {
                       onChange={(e) =>
                         onFormUpdate('firstName', e.target.value)
                       }
-                      className={clsx('form-control', {
-                        'input-error': !formDetails.firstName && isSubmitting,
-                      })}
+                      className="form-control"
                     />
                   </Col>
                   <Col size={12} sm={6} className="px-1">
@@ -273,9 +275,7 @@ export const Contact = () => {
                       value={formDetails.lastName}
                       placeholder="Прізвище"
                       onChange={(e) => onFormUpdate('lastName', e.target.value)}
-                      className={clsx('form-control', {
-                        'input-error': !formDetails.lastName && isSubmitting,
-                      })}
+                      className="form-control"
                     />
                   </Col>
                   <Col size={12} sm={6} className="px-1">
@@ -284,9 +284,7 @@ export const Contact = () => {
                       value={formDetails.email}
                       placeholder="Email"
                       onChange={(e) => onFormUpdate('email', e.target.value)}
-                      className={clsx('form-control', {
-                        'input-error': !formDetails.email && isSubmitting,
-                      })}
+                      className="form-control"
                     />
                   </Col>
                   <Col size={12} sm={6} className="px-1">
@@ -295,9 +293,7 @@ export const Contact = () => {
                       value={formDetails.phone}
                       placeholder="Телефон"
                       onChange={(e) => onFormUpdate('phone', e.target.value)}
-                      className={clsx('form-control', {
-                        'input-error': !formDetails.phone && isSubmitting,
-                      })}
+                      className="form-control"
                     />
                   </Col>
                   <Col size={12} className="px-1">
@@ -306,9 +302,7 @@ export const Contact = () => {
                       value={formDetails.message}
                       placeholder="Повідомлення"
                       onChange={(e) => onFormUpdate('message', e.target.value)}
-                      className={clsx('form-control', {
-                        'input-error': !formDetails.message && isSubmitting,
-                      })}
+                      className="form-control"
                     ></textarea>
                     <button className="contact-btn" type="submit">
                       <span className="contact-btn-text">{buttonText}</span>
