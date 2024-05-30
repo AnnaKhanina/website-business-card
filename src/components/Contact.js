@@ -127,8 +127,8 @@ export const Contact = () => {
                             onFormUpdate('message', e.target.value)
                           }
                         ></textarea>
-                        <button className="navbar-btn" type="submit">
-                          <span className="navbar-btn-text">{buttonText}</span>
+                        <button className="contact-btn" type="submit">
+                          <span className="contact-btn-text">{buttonText}</span>
                         </button>
                       </Col>
                     </Row>

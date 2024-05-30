@@ -56,7 +56,7 @@ export const Footer = () => {
                     <button
                       type="submit"
                       disabled={loading}
-                      className="navbar-btn"
+                      className="footer-btn"
                     >
                       <span className="navbar-btn-text">
                         {loading ? (
