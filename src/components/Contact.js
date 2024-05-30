@@ -291,7 +291,7 @@ export const Contact = () => {
                             {loading ? (
                               <Spinner as="span" animation="border" size="sm" />
                             ) : (
-                              { buttonText }
+                              buttonText
                             )}
                           </span>
                         </button>
