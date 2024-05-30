@@ -204,7 +204,12 @@ export const Contact = () => {
       setButtonText('Відправити');
       let result = await response.json();
       setFormDetails(formInitialDetails);
+
+      console.log('Response OK:', response.ok);
+
       if (response.ok) {
+        console.log('Toast Success Call');
+
         toast.success('Повідомлення успішно надіслано', {
           autoClose: 5000,
           hideProgressBar: false,
