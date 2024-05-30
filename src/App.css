@@ -91,6 +91,10 @@ select:focus {
   text-align: center;
 }
 
+.Toastify__toast-container {
+  z-index: 9999;
+}
+
 /*  Modal */
 
 .modal-content {
@@ -825,168 +829,6 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 
 /************ Footer Css ************/
 
-/* .footer {
-  padding: 0 0 50px 0;  
-  background-image: url('./assets/img/black-brick1.jpg');
-}
-
-.footer h3 {
-  color: gold;
-}
-
-.footer-list {
-  display: flex;
-  justify-content: space-between; 
-  list-style: none;
-  padding: 0;
-  gap: 16px;
-}
-
-.footer-item {
-  flex: 1;
-  background: rgba(117, 117, 117, 0.5);
-  border-radius: 55px;  
-}
-
-.label-text {
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  line-height: 1.2em;
-  font-size: 16px;
-  color: gold;
-  margin-bottom: 16px;
-}
-
-.footer-form {
-  display: flex;
-  flex-direction: row;  
-  gap: 5px;
-  justify-content: center;
-  margin-bottom: 16px;
-}
-
-.footer-input {
-  color: #121212;
-  font-weight: 500;
-  background: #fff;
-  border-radius: 6px;
-  padding: 15px 7px;
-  letter-spacing: 0.5px;
-}
-
-.footer-btn {
-  background: rgb(15, 15, 15);
-  background: linear-gradient(0deg, rgba(15, 15, 15, 1) 5%, rgba(163, 161, 147, 1) 91%);
-  padding: 15px 7px;
-  text-align: center;
-  color: #fff;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  border-radius: 6px;
-}
-
-.footer-btn:hover,
-.footer-btn:focus {
-  color: gold;
-  transition: 0.3s ease-in-out;
-}
-
-.footer-text {
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  line-height: 1.2em;
-  font-size: 16px;
-  color: gold;
-}
-
-.footer-social-icon {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 16px;
-}
-
-.footer-social-icon a { 
-  width: 42px;
-  height: 42px;
-  background-color: #fff;
-  display: inline-flex;
-  border-radius: 50%;
-  align-items: center;
-  justify-content: center;
-  line-height: 1;
-  border: 2px solid #000000a6;
-}
-
-.footer-social-icon a:not(:last-child) {
-  margin-right: 18px;
-}
-
-.footer-social-icon a::before {
-  content: "";
-  width: 42px;
-  height: 42px;
-  position: absolute;
-  background-color: #121212;
-  border-radius: 50%;
-  transform: scale(0);
-  transition: 0.3s ease-in-out;
-}
-
-.footer-social-icon a:hover::before {
-  transform: scale(1);
-}
-
-.footer-social-icon a img {
-  width: 40%;
-  z-index: 1;
-  transition: 0.3s ease-in-out;
-}
-
-.footer-social-icon a:hover img {
-  filter: brightness(0) invert(1);
-}
-
-.footer-text-right {
-  font-weight: 400;
-  font-size: 16px;
-  color: #B8B8B8;
-  letter-spacing: 0.5px;
-  margin-top: 45px;
-}
-
-@media (max-width: 768px) {
-  .footer-list {   
-    flex-direction: column;   
-  }
-
-  .footer-item {
-    margin-right: 0;      
-   } 
-
-   .footer-social-icon {
-    margin-bottom: 20px;
-  } 
-} 
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .footer-input {
-    padding: 9px 4px;
-  }
-}
-
-
-@media (min-width: 768px) {
-  .footer-social {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  } 
-  .footer-form {
-    gap: 8px;
-  }
-} */
-
 .footer {
   padding: 0 0 50px 0;
   background-image: url('./assets/img/black-brick1.jpg');
@@ -1028,7 +870,6 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   justify-content: center;
   margin-bottom: 16px;
   flex-wrap: wrap;
-  /* Allow wrapping on small screens */
 }
 
 .footer-input {
@@ -1040,7 +881,6 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   letter-spacing: 0.5px;
   flex: 1;
   min-width: 200px;
-  /* Ensures input is not too small */
 }
 
 .footer-btn {
