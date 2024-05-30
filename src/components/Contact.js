@@ -202,7 +202,7 @@ export const Contact = () => {
         body: JSON.stringify(formDetails),
       });
       setButtonText('Відправити');
-      // let result = await response.json();
+      let result = await response.json();
       setFormDetails(formInitialDetails);
       if (response.ok) {
         toast.success('Повідомлення успішно надіслано', {
