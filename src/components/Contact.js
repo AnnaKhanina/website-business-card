@@ -172,6 +172,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 export const Contact = () => {
+  console.log('Contact component render'); // Лог для отслеживания рендеринга компонента
+
   const formInitialDetails = {
     firstName: '',
     lastName: '',
@@ -192,6 +194,7 @@ export const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log('handleSubmit called'); // Лог для отслеживания вызова handleSubmit
     setButtonText('Відправлення...');
     try {
       let response = await fetch('/api/contact', {
@@ -205,11 +208,10 @@ export const Contact = () => {
       let result = await response.json();
       setFormDetails(formInitialDetails);
 
-      console.log('Response OK:', response.ok);
+      console.log('Response OK:', response.ok); // Лог для отслеживания успешного ответа
 
       if (response.ok) {
-        console.log('Toast Success Call');
-
+        console.log('Toast Success Call'); // Лог для отслеживания вызова toast
         toast.success('Повідомлення успішно надіслано', {
           autoClose: 5000,
           hideProgressBar: false,
@@ -219,6 +221,7 @@ export const Contact = () => {
           progress: undefined,
         });
       } else {
+        console.log('Toast Error Call'); // Лог для отслеживания вызова toast
         toast.error('Щось пішло не так, спробуйте пізніше.', {
           autoClose: 5000,
           hideProgressBar: false,
@@ -230,6 +233,7 @@ export const Contact = () => {
       }
     } catch (error) {
       setButtonText('Відправити');
+      console.log('Toast Catch Error Call'); // Лог для отслеживания вызова toast в catch
       toast.error('Щось пішло не так, спробуйте пізніше.', {
         autoClose: 5000,
         hideProgressBar: false,
