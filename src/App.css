@@ -95,6 +95,10 @@ select:focus {
   z-index: 9999;
 }
 
+.input-error {
+  border-color: red;
+}
+
 /*  Modal */
 
 .modal-content {

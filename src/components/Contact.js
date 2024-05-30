@@ -170,10 +170,9 @@ import { Container, Row, Col } from 'react-bootstrap';
 import contactImg from '../assets/img/logo-beerking1.png';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import clsx from 'clsx';
 
 export const Contact = () => {
-  console.log('Contact component render'); // Лог для отслеживания рендеринга компонента
-
   const formInitialDetails = {
     firstName: '',
     lastName: '',
@@ -184,6 +183,7 @@ export const Contact = () => {
 
   const [formDetails, setFormDetails] = useState(formInitialDetails);
   const [buttonText, setButtonText] = useState('Відправити');
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const onFormUpdate = (category, value) => {
     setFormDetails({
@@ -194,8 +194,8 @@ export const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('handleSubmit called'); // Лог для отслеживания вызова handleSubmit
     setButtonText('Відправлення...');
+    setIsSubmitting(true);
     try {
       let response = await fetch('/api/contact', {
         method: 'POST',
@@ -205,13 +205,11 @@ export const Contact = () => {
         body: JSON.stringify(formDetails),
       });
       setButtonText('Відправити');
+      setIsSubmitting(false);
       let result = await response.json();
       setFormDetails(formInitialDetails);
 
-      console.log('Response OK:', response.ok); // Лог для отслеживания успешного ответа
-
       if (response.ok) {
-        console.log('Toast Success Call'); // Лог для отслеживания вызова toast
         toast.success('Повідомлення успішно надіслано', {
           autoClose: 5000,
           hideProgressBar: false,
@@ -221,7 +219,6 @@ export const Contact = () => {
           progress: undefined,
         });
       } else {
-        console.log('Toast Error Call'); // Лог для отслеживания вызова toast
         toast.error('Щось пішло не так, спробуйте пізніше.', {
           autoClose: 5000,
           hideProgressBar: false,
@@ -233,7 +230,7 @@ export const Contact = () => {
       }
     } catch (error) {
       setButtonText('Відправити');
-      console.log('Toast Catch Error Call'); // Лог для отслеживания вызова toast в catch
+      setIsSubmitting(false);
       toast.error('Щось пішло не так, спробуйте пізніше.', {
         autoClose: 5000,
         hideProgressBar: false,
@@ -265,6 +262,9 @@ export const Contact = () => {
                       onChange={(e) =>
                         onFormUpdate('firstName', e.target.value)
                       }
+                      className={clsx('form-control', {
+                        'input-error': !formDetails.firstName && isSubmitting,
+                      })}
                     />
                   </Col>
                   <Col size={12} sm={6} className="px-1">
@@ -273,6 +273,9 @@ export const Contact = () => {
                       value={formDetails.lastName}
                       placeholder="Прізвище"
                       onChange={(e) => onFormUpdate('lastName', e.target.value)}
+                      className={clsx('form-control', {
+                        'input-error': !formDetails.lastName && isSubmitting,
+                      })}
                     />
                   </Col>
                   <Col size={12} sm={6} className="px-1">
@@ -281,6 +284,9 @@ export const Contact = () => {
                       value={formDetails.email}
                       placeholder="Email"
                       onChange={(e) => onFormUpdate('email', e.target.value)}
+                      className={clsx('form-control', {
+                        'input-error': !formDetails.email && isSubmitting,
+                      })}
                     />
                   </Col>
                   <Col size={12} sm={6} className="px-1">
@@ -289,6 +295,9 @@ export const Contact = () => {
                       value={formDetails.phone}
                       placeholder="Телефон"
                       onChange={(e) => onFormUpdate('phone', e.target.value)}
+                      className={clsx('form-control', {
+                        'input-error': !formDetails.phone && isSubmitting,
+                      })}
                     />
                   </Col>
                   <Col size={12} className="px-1">
@@ -297,6 +306,9 @@ export const Contact = () => {
                       value={formDetails.message}
                       placeholder="Повідомлення"
                       onChange={(e) => onFormUpdate('message', e.target.value)}
+                      className={clsx('form-control', {
+                        'input-error': !formDetails.message && isSubmitting,
+                      })}
                     ></textarea>
                     <button className="contact-btn" type="submit">
                       <span className="contact-btn-text">{buttonText}</span>
