@@ -860,7 +860,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 .footer-form {
   display: flex;
   flex-direction: row;  
-  gap: 16px;
+  gap: 5px;
   justify-content: center;
   margin-bottom: 16px;
 }
@@ -882,7 +882,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   color: #fff;
   font-weight: 500;
   letter-spacing: 0.5px;
-  border-radius: 18px;
+  border-radius: 6px;
 }
 
 .footer-btn:hover,
