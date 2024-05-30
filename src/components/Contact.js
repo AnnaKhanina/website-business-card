@@ -40,13 +40,34 @@ export const Contact = () => {
       // let result = await response.json();
       setFormDetails(formInitialDetails);
       if (response.ok) {
-        toast.success('Повідомлення успішно надіслано');
+        toast.success('Повідомлення успішно надіслано', {
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
       } else {
-        toast.error('Щось пішло не так, спробуйте пізніше.');
+        toast.error('Щось пішло не так, спробуйте пізніше.', {
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
       }
     } catch (error) {
       setButtonText('Відправити');
-      toast.error('Щось пішло не так, спробуйте пізніше.');
+      toast.error('Щось пішло не так, спробуйте пізніше.', {
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
     }
   };
 
