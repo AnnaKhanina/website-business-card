@@ -869,7 +869,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   color: #121212;
   font-weight: 500;
   background: #fff;
-  border-radius: 18px;
+  border-radius: 6px;
   padding: 15px 7px;
   letter-spacing: 0.5px;
 }
