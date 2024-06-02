@@ -102,30 +102,20 @@ export const Footer = () => {
                 </div>
               </div>
             </li>
-            <li className="footer-item">
-              <div className="footer-section">
-                <h3 className="footer-text">
-                  <a href="/about" className="footer-link">
-                    Про Нас
-                  </a>
-                </h3>
-                <h3 className="footer-text">
-                  <a href="/privacy-policy" className="footer-link">
-                    Політика Конфіденційності
-                  </a>
-                </h3>
-              </div>
-            </li>
           </ul>
+          <div className="footer-section">
+            <a href="/about" className="footer-link">
+              <h3 className="footer-text">Про Нас</h3>
+            </a>
+            <a href="/privacy-policy" className="footer-link">
+              <h3 className="footer-text">Політика Конфіденційності</h3>
+            </a>
+          </div>
           <h3 className="footer-text-right">
             {' '}
             CopyRight 2024. All Rights Reserved
           </h3>
         </div>
-        <h3 className="footer-text-right">
-          {' '}
-          CopyRight 2024. All Rights Reserved
-        </h3>
       </Container>
     </footer>
   );
