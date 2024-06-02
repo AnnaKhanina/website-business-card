@@ -851,8 +851,8 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 }
 
 .footer-social {
-  display: flex;
-  align-items: center;
+  /* display: flex;
+  align-items: center; */
   text-align: center;
 }
 
@@ -870,6 +870,13 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   gap: 16px;
   list-style: none;
   padding: 0;
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .footer-social-list {
+    margin-bottom: 16px;
+  }
 }
 
 .footer-social-item {
