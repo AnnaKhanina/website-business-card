@@ -830,7 +830,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   background-image: url('./assets/img/black-brick1.jpg');
 }
 
-/* .footer h3 {
+.footer h3 {
   color: gold;
 }
 
@@ -1005,51 +1005,9 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   .footer-form {
     gap: 8px;
   }
-} */
-
-.footer-wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
 }
 
-.footer-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  padding: 0;
-  list-style: none;
-}
 
-.footer-item {
-  margin: 10px 0;
-}
-
-.footer-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.footer-social-icon {
-  display: flex;
-  justify-content: center;
-}
-
-.footer-link {
-  color: inherit;
-  text-decoration: none;
-}
-
-.footer-link:hover {
-  text-decoration: underline;
-}
-
-.footer-text-right {
-  margin-top: 20px;
-}
 
 
 
