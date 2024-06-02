@@ -830,7 +830,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   background-image: url('./assets/img/black-brick1.jpg');
 }
 
-.footer h3 {
+.footer h2 {
   color: gold;
 }
 
@@ -841,7 +841,8 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;    
+  text-align: center;   
+  gap: 8px; 
 }
 
 @media (min-width: 768px) {
@@ -850,9 +851,8 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   }
 }
 
-.footer-social {
-  /* display: flex;
-  align-items: center; */
+.footer-social,
+.footer-section {  
   text-align: center;
 }
 
@@ -866,16 +866,15 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 
 .footer-social-list {
   display: flex;
-  flex-direction: row;
-  gap: 16px;
+  flex-direction: row;  
   list-style: none;
   padding: 0;
-  margin-bottom: 0;
+  margin-bottom: 16px;
 }
 
 @media (min-width: 768px) {
   .footer-social-list {
-    margin-bottom: 16px;
+    margin-bottom: 0;
   }
 }
 
@@ -922,6 +921,63 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 
 .footer-social-icon:hover img {
   filter: brightness(0) invert(1);
+}
+
+.footer-section-list {  
+  list-style: none;
+  padding: 0;
+  margin-bottom: 16px;
+}
+
+.footer-section-item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.footer-label-text {
+  font-weight: 700;
+    letter-spacing: 0.5px;
+    line-height: 1.2em;
+    font-size: 16px;
+    color: gold;
+    margin-bottom: 16px;
+}
+
+.footer-form {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  justify-content: center;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+footer-input {
+  color: #121212;
+  font-weight: 500;
+  background: #fff;
+  border-radius: 6px;
+  padding: 15px 7px;
+  letter-spacing: 0.5px;
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-btn {
+  background: rgb(15, 15, 15);
+  background: linear-gradient(0deg, rgba(15, 15, 15, 1) 5%, rgba(163, 161, 147, 1) 91%);
+  padding: 15px 7px;
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  border-radius: 6px;
+  flex: 0 0 auto;
+}
+
+.footer-btn:hover,
+.footer-btn:focus {
+  color: gold;
+  transition: 0.3s ease-in-out;
 }
 
 

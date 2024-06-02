@@ -127,10 +127,10 @@ export const Footer = () => {
     <footer className="footer">
       <Container>
         <img className="navbar-logo" src={crown} alt="logo" />
-        <h3>BEERKING</h3>
+        <h2>BEERKING</h2>
         <div className="footer-wrap">
           <div className="footer-social">
-            <h2 className="footer-title">Ми в соцмережах</h2>
+            <h3 className="footer-title">Ми в соцмережах</h3>
             <ul className="footer-social-list">
               <li className="footer-social-item">
                 <a
@@ -168,25 +168,25 @@ export const Footer = () => {
           <div className="footer-section">
             <ul className="footer-section-list">
               <li className="footer-section-item">
-                <p className="footer-text">
+                <h3 className="footer-title">
                   <a href="/about" className="footer-link">
                     Про Нас
                   </a>
-                </p>
+                </h3>
               </li>
               <li className="footer-section-item">
-                <p className="footer-text">
+                <h3 className="footer-title">
                   <a href="/privacy-policy" className="footer-link">
                     Політика Конфіденційності
                   </a>
-                </p>
+                </h3>
               </li>
             </ul>
           </div>
 
           <div className="footer-subscribe">
             <form id="subscribe-form" onSubmit={handleSubmit}>
-              <label htmlFor="email" className="label-text">
+              <label htmlFor="email" className="footer-label-text">
                 Підписуйтесь на новини
               </label>
               <div className="footer-form">
