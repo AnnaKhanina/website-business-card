@@ -190,20 +190,17 @@ export const Contact = () => {
   };
 
   const validateEmail = (email) => {
-    // Проверка email на наличие только латинских символов и корректный формат
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     return emailRegex.test(email);
   };
 
   const validatePhone = (phone) => {
-    // Проверка номера телефона на формат +38 и только цифры
-    const phoneRegex = /^\+38\d{10}$/;
+    const phoneRegex = /^\d{10}$/;
     return phoneRegex.test(phone);
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // Проверка на заполненность полей
     if (
       !formDetails.firstName ||
       !formDetails.lastName ||
