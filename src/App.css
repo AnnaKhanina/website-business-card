@@ -852,11 +852,11 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 
 .label-text {
   font-weight: 700;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.8px;
   line-height: 1.2em;
-  font-size: 16px;
+  font-size: 20px;
   color: gold;
-  margin-bottom: 16px;
+  margin-bottom: 16px; 
 }
 
 .footer-form {
@@ -957,6 +957,12 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   cursor: pointer;
 }
 
+.footer-link:hover,
+.footer-link:focus {
+  text-decoration: underline;
+  color:#fff;
+}
+
 .footer-text-right {
   font-weight: 400;
   font-size: 16px;
@@ -988,24 +994,15 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     max-width: none;
   }
 
-  /* .footer-btn {
+  .footer-btn {
     width: 100%;
-  } */
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .footer-input {
     padding: 9px 4px;
   }
-}
-
-@media (max-width: 991px) {
-  .footer-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    }
 }
 
 @media (min-width: 768px) {
