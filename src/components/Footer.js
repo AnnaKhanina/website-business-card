@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { Container, Spinner } from 'react-bootstrap';
 import { toast } from 'react-toastify';
@@ -104,15 +103,6 @@ export const Footer = () => {
               </div>
             </li>
           </ul>
-          <div className="footer-section">
-            <a href="/about" className="footer-link">
-              <h3 className="footer-text">Про Нас</h3>
-            </a>
-            <a href="/privacy-policy" className="footer-link">
-              <h3 className="footer-text">Політика Конфіденційності</h3>
-            </a>
-          </div>
-
           <h3 className="footer-text-right">
             {' '}
             CopyRight 2024. All Rights Reserved
