@@ -103,11 +103,30 @@ export const Footer = () => {
               </div>
             </li>
           </ul>
-          <div className="footer-section">
+          {/* <div className="footer-section">
             <a href="/about" className="footer-link">
               <h3 className="footer-text">Про Нас</h3>
             </a>
             <a href="/privacy-policy" className="footer-link">
+              <h3 className="footer-text">Політика Конфіденційності</h3>
+            </a>
+          </div> */}
+
+          <div className="footer-section">
+            <a
+              href="/about"
+              className="footer-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <h3 className="footer-text">Про Нас</h3>
+            </a>
+            <a
+              href="/privacy-policy"
+              className="footer-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <h3 className="footer-text">Політика Конфіденційності</h3>
             </a>
           </div>
