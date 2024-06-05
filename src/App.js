@@ -1,18 +1,18 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
-import { NavBar } from './components/NavBar';
-import { Banner } from './components/Banner';
-import { Partners } from './components/Partners';
-import { Products } from './components/Products';
-import { Contact } from './components/Contact';
-import { Footer } from './components/Footer';
+import { NavBar } from './components/NavBar.js';
+import { Banner } from './components/Banner.js';
+import { Partners } from './components/Partners.js';
+import { Products } from './components/Products.js';
+import { Contact } from './components/Contact.js';
+import { Footer } from './components/Footer.js';
 import { About } from './pages/About';
-import { PrivacyPolicy } from './pages/PrivacyPolicy';
+import { PrivacyPolicy } from './pages/PrivacyPolicy.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import ScrollToTopButton from './components/ScrollToTopButton';
-import ScrollToBottomButton from './components/ScrollToBottomButton';
+import ScrollToTopButton from './components/ScrollToTopButton.js';
+import ScrollToBottomButton from './components/ScrollToBottomButton.js';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
