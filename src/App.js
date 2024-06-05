@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import { NavBar } from './components/NavBar';
 import { Banner } from './components/Banner';
@@ -33,16 +33,21 @@ function App() {
     <Router>
       <div className="App">
         <NavBar />
-        <Switch>
-          <Route path="/about" component={About} />
-          <Route path="/privacy-policy" component={PrivacyPolicy} />
-          <Route path="/">
-            <Banner />
-            <Products />
-            <Partners />
-            <Contact />
-          </Route>
-        </Switch>
+        <Routes>
+          <Route path="/about" element={<About />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route
+            path="/"
+            element={
+              <>
+                <Banner />
+                <Products />
+                <Partners />
+                <Contact />
+              </>
+            }
+          />
+        </Routes>
         <Footer />
         <ScrollToTopButton />
         <ScrollToBottomButton />
