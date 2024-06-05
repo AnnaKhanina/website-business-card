@@ -1,5 +1,5 @@
 import { Container, Row, Col } from 'react-bootstrap';
-import { ModalWindow } from '../components/Modal.js';
+import { ModalWindow } from '../components/Modal';
 import {
   ArrowRightCircle,
   TelephoneFill,

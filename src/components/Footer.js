@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { Container, Spinner } from 'react-bootstrap';
 import { toast } from 'react-toastify';
@@ -113,22 +114,12 @@ export const Footer = () => {
           </div> */}
 
           <div className="footer-section">
-            <a
-              href="/about"
-              className="footer-link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <Link to="/about" className="footer-link">
               <h3 className="footer-text">Про Нас</h3>
-            </a>
-            <a
-              href="/privacy-policy"
-              className="footer-link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            </Link>
+            <Link to="/privacy-policy" className="footer-link">
               <h3 className="footer-text">Політика Конфіденційності</h3>
-            </a>
+            </Link>
           </div>
           <h3 className="footer-text-right">
             {' '}

@@ -1,6 +1,6 @@
 import { Container, Col, Row } from 'react-bootstrap';
-import { PartnerCard } from './PartnerCard.js';
-import { partners } from '../products/partners.js';
+import { PartnerCard } from './PartnerCard';
+import { partners } from '../products/partners';
 
 export const Partners = () => {
   return (

@@ -1,10 +1,10 @@
 import { Container, Row, Col, Tab, Nav } from 'react-bootstrap';
-import { BeerCard } from './BeerCard.js';
-import { CyderCard } from './CyderCard.js';
-import { WineCard } from './WineCard.js';
-import { beers } from '../products/beers.js';
-import { cyders } from '../products/cyders.js';
-import { wines } from '../products/wines.js';
+import { BeerCard } from './BeerCard';
+import { CyderCard } from './CyderCard';
+import { WineCard } from './WineCard';
+import { beers } from '../products/beers';
+import { cyders } from '../products/cyders';
+import { wines } from '../products/wines';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 

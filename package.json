@@ -1,8 +1,8 @@
 {
   "name": "beerking",
   "version": "0.1.0",
+  "type":"module",
   "private": true,
-  "type": "module",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -22,7 +22,7 @@
     "react-multi-carousel": "^2.8.4",
     "react-on-screen": "^2.1.1",
     "react-responsive-carousel": "^3.2.23",
-    "react-router-dom": "^6.22.2",
+    "react-router-dom": "^6.23.1",
     "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.1",
     "react-toastify": "^10.0.5",
