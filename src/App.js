@@ -7,7 +7,7 @@ import { Partners } from './components/Partners.js';
 import { Products } from './components/Products.js';
 import { Contact } from './components/Contact.js';
 import { Footer } from './components/Footer.js';
-import { About } from './pages/About';
+import { About } from './pages/About.js';
 import { PrivacyPolicy } from './pages/PrivacyPolicy.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
