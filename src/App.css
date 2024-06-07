@@ -448,7 +448,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   color: #fff; 
 }
 
-.banner .header-img {
+/* .banner .header-img {
   animation: updown 3s linear infinite;
 }
 
@@ -464,7 +464,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   100% {
     transform: translateY(-20px);
   }
-}
+} */
 
 @media (min-width: 992px) {
   .banner {
