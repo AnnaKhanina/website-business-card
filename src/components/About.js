@@ -92,7 +92,7 @@ import about2 from '../assets/img/beerking2.jpg';
 import about3 from '../assets/img/beerking3.jpg';
 import about4 from '../assets/img/beerking4.jpg';
 
-Modal.setAppElement('#root');
+Modal.setAppElement('#root'); // Укажите корневой элемент вашего приложения
 
 export const About = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -166,7 +166,7 @@ export const About = () => {
         isOpen={isOpen}
         onRequestClose={() => setIsOpen(false)}
         contentLabel="Image Modal"
-        className="modal-about"
+        className="about-modal"
         overlayClassName="overlay"
       >
         {selectedImage && (
