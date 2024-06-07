@@ -78,7 +78,7 @@ export const Footer = () => {
                 <h3 className="footer-text">Ми в соцмережах</h3>
                 <div className="footer-social-icon">
                   <a
-                    href="https://web.telegram.org/k/"
+                    href="https://t.me/beer_king_khm"
                     target="_blank"
                     rel="noreferrer"
                   >

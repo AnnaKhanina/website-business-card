@@ -61,7 +61,7 @@ export const NavBar = () => {
             <div className="navbar-media d-flex align-items-center">
               <div className="social-icon d-flex align-items-center">
                 <a
-                  href="https://web.telegram.org/k/"
+                  href="https://t.me/beer_king_khm"
                   target="_blank"
                   rel="noreferrer"
                 >
