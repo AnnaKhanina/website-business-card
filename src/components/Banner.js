@@ -6,7 +6,7 @@ import {
   Calendar2,
 } from 'react-bootstrap-icons';
 // import barrelbeer from '../assets/img/barrel-beer.png';
-import bannerking from '../assets/img/king.png';
+import bannerking from '../assets/img/king1.png';
 import bannerIcon1 from '../assets/img/icons/banner-icon1.svg';
 import bannerIcon2 from '../assets/img/icons/banner-icon2.png';
 import bannerIcon3 from '../assets/img/icons/banner-icon3.png';
