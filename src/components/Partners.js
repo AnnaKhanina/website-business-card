@@ -10,7 +10,7 @@ export const Partners = () => {
           <Col>
             <div>
               <h2>Наші партнери</h2>
-              <p>Відкрити до співпраці</p>
+              <h3>Відкрити до співпраці</h3>
               <Row>
                 {partners.map((partner, index) => {
                   return <PartnerCard key={index} {...partner} />;
