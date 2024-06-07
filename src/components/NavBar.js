@@ -56,6 +56,15 @@ export const NavBar = () => {
               >
                 Наші партнери
               </Nav.Link>
+              <Nav.Link
+                href="#about"
+                className={
+                  activeLink === 'about' ? 'active navbar-link' : 'navbar-link'
+                }
+                onClick={() => onUpdateActiveLink('about')}
+              >
+                Про нас
+              </Nav.Link>
             </Nav>
 
             <div className="navbar-media d-flex align-items-center">

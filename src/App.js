@@ -1,14 +1,11 @@
-// import React from 'react';
-// import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import { NavBar } from './components/NavBar';
 import { Banner } from './components/Banner';
 import { Partners } from './components/Partners';
 import { Products } from './components/Products';
+import { About } from './components/About';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
-// import { About } from './pages/About';
-// import { PrivacyPolicy } from './pages/PrivacyPolicy';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ScrollToTopButton from './components/ScrollToTopButton';
@@ -23,6 +20,7 @@ function App() {
       <Banner />
       <Products />
       <Partners />
+      <About />
       <Contact />
       <Footer />
       <ScrollToTopButton />

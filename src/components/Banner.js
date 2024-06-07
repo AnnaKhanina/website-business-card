@@ -12,9 +12,9 @@ import bannerIcon2 from '../assets/img/icons/banner-icon2.png';
 import bannerIcon3 from '../assets/img/icons/banner-icon3.png';
 import bannerIcon4 from '../assets/img/icons/banner-icon4.png';
 import bannerIcon5 from '../assets/img/icons/banner-icon5.png';
+import logobeerking from '../assets/img/logo-beerking1.png';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-import logobeerking from '../assets/img/logo-beerking1.png';
 
 export const Banner = () => {
   return (
@@ -75,7 +75,7 @@ export const Banner = () => {
                           size={24}
                           style={{ paddingRight: '5px' }}
                         />
-                        +380 11 22 33 444
+                        +380 730 744 434
                       </li>
                       <li>
                         {' '}
@@ -102,7 +102,7 @@ export const Banner = () => {
             </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={5}>
-            <TrackVisibility>
+            {/* <TrackVisibility>
               {({ isVisible }) => (
                 <div
                   className={
@@ -117,7 +117,8 @@ export const Banner = () => {
                   />
                 </div>
               )}
-            </TrackVisibility>
+            </TrackVisibility> */}
+            <img className="header-img" src={bannerking} alt="Header Img" />
           </Col>
         </Row>
       </Container>
