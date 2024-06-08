@@ -19,8 +19,8 @@ function App() {
       <NavBar />
       {/* <Banner /> */}
       <Products />
-      <Partners />
       <About />
+      <Partners />
       <Contact />
       <Footer />
       <ScrollToTopButton />

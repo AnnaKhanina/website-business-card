@@ -5,6 +5,7 @@ import { WineCard } from './WineCard';
 import { beers } from '../products/beers';
 import { cyders } from '../products/cyders';
 import { wines } from '../products/wines';
+import { ModalWindow } from '../components/Modal';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -71,6 +72,7 @@ export const Products = () => {
                 </div>
               )}
             </TrackVisibility>
+            <ModalWindow />
           </Col>
         </Row>
       </Container>

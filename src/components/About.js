@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import Modal from 'react-modal';
@@ -36,11 +37,75 @@ export const About = () => {
   };
 
   return (
+    // <section className="about" id="about">
+    //   <div className="container">
+    //     <div className="row">
+    //       <div className="col-12">
+    //         <div className="about-bx wow zoomIn">
+    //           <h2 className="about-title">Про нас</h2>
+    //           <Carousel
+    //             responsive={responsive}
+    //             infinite={true}
+    //             className="owl-carousel owl-theme about-slider"
+    //           >
+    //             {images.map((image, index) => (
+    //               <div
+    //                 key={index}
+    //                 className="about-item"
+    //                 onClick={() => {
+    //                   setSelectedImage(image);
+    //                   setIsOpen(true);
+    //                 }}
+    //               >
+    //                 <img
+    //                   src={image}
+    //                   className="about-img"
+    //                   alt="beerking store"
+    //                 />
+    //               </div>
+    //             ))}
+    //           </Carousel>
+    //           <p className="about-text">
+    //             "Beer King" крамниця розливних освіжаючих напоїв в центрі
+    //             чудового мальовничого місця біля озера, де затишок, чудовий
+    //             захід сонця та свіже повітря. <br />
+    //             Ми слідкуємо за якістю та прислухаємося до своїх кліентів. Наші
+    //             постачальники з усїєї України, які відомі по всій країні. <br />
+    //             Ассортимент може змінюватись, тому треба уточнювати актуальність
+    //             за номером телефона або в наших соцмережах. Також є доставка по
+    //             місту Хмельницький, від 600 грн доставка безкоштовна.
+    //           </p>
+    //         </div>
+    //       </div>
+    //     </div>
+    //   </div>
+    //   <Modal
+    //     isOpen={isOpen}
+    //     onRequestClose={() => setIsOpen(false)}
+    //     contentLabel="Image Modal"
+    //     className="about-modal"
+    //     overlayClassName="overlay"
+    //   >
+    //     {selectedImage && (
+    //       <div>
+    //         <img
+    //           src={selectedImage}
+    //           alt="Enlarged beerking store"
+    //           className="modal-image"
+    //         />
+    //         <button onClick={() => setIsOpen(false)} className="close-button">
+    //           <img className="icon-close" src={iconClose} alt="logo" />
+    //         </button>
+    //       </div>
+    //     )}
+    //   </Modal>
+    // </section>
+
     <section className="about" id="about">
-      <div className="container">
-        <div className="row">
-          <div className="col-12">
-            <div className="about-bx wow zoomIn">
+      <Container>
+        <Row className="align-items-center">
+          <Col>
+            <div>
               <h2 className="about-title">Про нас</h2>
               <Carousel
                 responsive={responsive}
@@ -75,29 +140,32 @@ export const About = () => {
                 місту Хмельницький, від 600 грн доставка безкоштовна.
               </p>
             </div>
-          </div>
-        </div>
-      </div>
-      <Modal
-        isOpen={isOpen}
-        onRequestClose={() => setIsOpen(false)}
-        contentLabel="Image Modal"
-        className="about-modal"
-        overlayClassName="overlay"
-      >
-        {selectedImage && (
-          <div>
-            <img
-              src={selectedImage}
-              alt="Enlarged beerking store"
-              className="modal-image"
-            />
-            <button onClick={() => setIsOpen(false)} className="close-button">
-              <img className="icon-close" src={iconClose} alt="logo" />
-            </button>
-          </div>
-        )}
-      </Modal>
+            <Modal
+              isOpen={isOpen}
+              onRequestClose={() => setIsOpen(false)}
+              contentLabel="Image Modal"
+              className="about-modal"
+              overlayClassName="overlay"
+            >
+              {selectedImage && (
+                <div>
+                  <img
+                    src={selectedImage}
+                    alt="Enlarged beerking store"
+                    className="modal-image"
+                  />
+                  <button
+                    onClick={() => setIsOpen(false)}
+                    className="close-button"
+                  >
+                    <img className="icon-close" src={iconClose} alt="logo" />
+                  </button>
+                </div>
+              )}
+            </Modal>
+          </Col>
+        </Row>
+      </Container>
     </section>
   );
 };

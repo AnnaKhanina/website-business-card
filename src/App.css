@@ -153,11 +153,17 @@ nav.navbar {
   z-index: 100;
   transition: 0.32s ease-in-out;
   background-color: #2c2c2c;
+  border-bottom: solid 2px gold;
+}
+
+.header-img {
+  width: auto;
+  height: 50px;
 }
 
 img.navbar-logo {
   width: auto;
-  height: 50px;
+  height: 30px;
 }
 
 .navbar-brand h2 {
@@ -462,7 +468,9 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 /* Products */
 
 .products {
-  padding: 80px 0;
+  /* padding: 80px 0; */
+  margin-top: 0;
+  padding: 200px 0 100px 0;
   position: relative;
   background-image: url('./assets/img/black-brick1.jpg');
   background-repeat:no-repeat;
@@ -678,8 +686,17 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 /*  Partners  */
 
 .partners {
-  background-color: #2c2c2c;
-  padding: 80px 0;
+  padding: 0 0 50px 0;
+  position: relative;
+  background-color: gold;
+}
+
+.partners-bx {
+  background: #2c2c2c;
+  border-radius: 64px;
+  text-align: center;
+  padding: 20px 50px;
+  margin-top: 50px;
 }
 
 .partners h2 {
@@ -727,17 +744,8 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 /* About */
 
 .about {
-  padding: 0 0 50px 0;
-  position: relative;
-  background-color: gold;
-}
-
-.about-bx {
-  background: #2c2c2c;
-  border-radius: 64px;
-  text-align: center;
-  padding: 20px 50px; 
-  margin-top: 50px;
+  background-color: #2c2c2c;
+  padding: 80px 0;
 }
 
 .about-title {
@@ -998,7 +1006,8 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 .footer-social-icon {
   display: flex;
   justify-content: center;
-  margin-bottom: 16px;
+  /* margin-bottom: 16px; */
+  margin: 16px 0 16px 0;
 }
 
 .footer-social-icon a {

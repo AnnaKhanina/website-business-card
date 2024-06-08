@@ -21,15 +21,15 @@ export const NavBar = () => {
         <Container>
           <Navbar.Brand href="/">
             {/* <img className="navbar-logo" src={crown} alt="logo" /> */}
-            <img className="navbar-logo" src={bannerking} alt="Header Img" />
-            <h2>BEERKING</h2>
+            <img className="header-img" src={bannerking} alt="Header Img" />
+            {/* <h2>BEERKING</h2> */}
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto align-items-center">
-              <Nav.Link
+              {/* <Nav.Link
                 href="#home"
                 className={
                   activeLink === 'home' ? 'active navbar-link' : 'navbar-link'
@@ -37,7 +37,7 @@ export const NavBar = () => {
                 onClick={() => onUpdateActiveLink('home')}
               >
                 Головна
-              </Nav.Link>
+              </Nav.Link> */}
               <Nav.Link
                 href="#products"
                 className={
