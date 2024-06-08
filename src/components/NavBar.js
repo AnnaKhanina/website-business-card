@@ -20,15 +20,8 @@ export const NavBar = () => {
         <Container>
           <Navbar.Brand href="/">
             {/* <img className="navbar-logo" src={crown} alt="logo" /> */}
-            {/* <img className="header-img" src={bannerking} alt="Header Img" /> */}
-
-            <h2>
-              BEER
-              <span>
-                <img className="header-img" src={bannerking} alt="Header Img" />
-              </span>
-              KING
-            </h2>
+            <img className="navbar-logo" src={bannerking} alt="Header Img" />
+            <h2>BEERKING</h2>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
