@@ -1,6 +1,6 @@
 import './App.css';
 import { NavBar } from './components/NavBar';
-import { Banner } from './components/Banner';
+// import { Banner } from './components/Banner';
 import { Partners } from './components/Partners';
 import { Products } from './components/Products';
 import { About } from './components/About';
@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <Banner />
+      {/* <Banner /> */}
       <Products />
       <Partners />
       <About />

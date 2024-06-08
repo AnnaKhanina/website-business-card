@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
-import crown from '../assets/img/icons/crown.png';
+// import crown from '../assets/img/icons/crown.png';
+import bannerking from '../assets/img/king.png';
 import telegram from '../assets/img/icons/telegram.svg';
 import viber from '../assets/img/icons/viber.svg';
 import instagram from '../assets/img/icons/instagram.svg';
@@ -19,7 +20,8 @@ export const NavBar = () => {
       <Navbar expand="lg" className="transition-navbar">
         <Container>
           <Navbar.Brand href="/">
-            <img className="navbar-logo" src={crown} alt="logo" />
+            {/* <img className="navbar-logo" src={crown} alt="logo" /> */}
+            <img className="navbar-logo" src={bannerking} alt="Header Img" />
             <h2>BEERKING</h2>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
