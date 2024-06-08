@@ -20,8 +20,8 @@ export const NavBar = () => {
         <Container>
           <Navbar.Brand href="/">
             <div className="nav-brand-bx">
-              <img className="navbar-logo" src={bannerking} alt="Header Img" />
               <h2>BEERKING</h2>
+              <img className="navbar-logo" src={bannerking} alt="Header Img" />
             </div>
             {/* <img className="navbar-logo" src={crown} alt="logo" /> */}
             {/* <img className="navbar-logo" src={bannerking} alt="Header Img" />

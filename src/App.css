@@ -162,11 +162,6 @@ nav.navbar {
   gap: 6px;
 }
 
-.header-img {
-  width: auto;
-  height: 50px;
-}
-
 img.navbar-logo {
   width: auto;
   height: 30px;
@@ -175,7 +170,10 @@ img.navbar-logo {
 .navbar-brand h2 {
   align-items: center;
   text-align: center;
-  padding-bottom: 0;
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 400;
   color: gold;
 }
 
@@ -476,12 +474,12 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 .products {
   /* padding: 80px 0; */
   margin-top: 0;
-  padding: 200px 0 100px 0;
+  padding: 150px 0 100px 0;
   position: relative;
   background-image: url('./assets/img/black-brick1.jpg');
   background-repeat:no-repeat;
   background-size: cover;
-  border-bottom: 2px solid #121212;  
+  border-bottom: 2px solid black;  
  }
 
 .products h2 {
@@ -670,7 +668,6 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
    }
  }
 
-
  @media (min-width: 1200px) {
    .beer-imgbx {
      height: 440px;
@@ -700,6 +697,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 .partners-bx {
   background: #2c2c2c;
   border-radius: 64px;
+  border: 2px solid black;
   text-align: center;
   padding: 20px 50px;
   margin-top: 50px;
@@ -752,6 +750,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 .about {
   background-color: #2c2c2c;
   padding: 80px 0;
+  border-bottom: 2px solid black;
 }
 
 .about-title {
@@ -833,7 +832,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 .contact { 
   background: gold;
   padding: 20px 0 20px 0;
-  border-bottom: 2px solid #2c2c2c;
+  border-bottom: 2px solid black;
 }
 
 .contact img {
