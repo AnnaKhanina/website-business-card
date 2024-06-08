@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
-// import crown from '../assets/img/icons/crown.png';
 import bannerking from '../assets/img/king.png';
 import telegram from '../assets/img/icons/telegram.svg';
 import viber from '../assets/img/icons/viber.svg';
@@ -21,23 +20,21 @@ export const NavBar = () => {
         <Container>
           <Navbar.Brand href="/">
             {/* <img className="navbar-logo" src={crown} alt="logo" /> */}
-            <img className="header-img" src={bannerking} alt="Header Img" />
-            {/* <h2>BEERKING</h2> */}
+            {/* <img className="header-img" src={bannerking} alt="Header Img" /> */}
+
+            <h2>
+              BEER
+              <span>
+                <img className="header-img" src={bannerking} alt="Header Img" />
+              </span>
+              KING
+            </h2>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto align-items-center">
-              {/* <Nav.Link
-                href="#home"
-                className={
-                  activeLink === 'home' ? 'active navbar-link' : 'navbar-link'
-                }
-                onClick={() => onUpdateActiveLink('home')}
-              >
-                Головна
-              </Nav.Link> */}
               <Nav.Link
                 href="#products"
                 className={
