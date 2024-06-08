@@ -19,9 +19,13 @@ export const NavBar = () => {
       <Navbar expand="lg" className="transition-navbar">
         <Container>
           <Navbar.Brand href="/">
+            <div className="nav-brand-bx">
+              <img className="navbar-logo" src={bannerking} alt="Header Img" />
+              <h2>BEERKING</h2>
+            </div>
             {/* <img className="navbar-logo" src={crown} alt="logo" /> */}
-            <img className="navbar-logo" src={bannerking} alt="Header Img" />
-            <h2>BEERKING</h2>
+            {/* <img className="navbar-logo" src={bannerking} alt="Header Img" />
+            <h2>BEERKING</h2> */}
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>

@@ -156,6 +156,12 @@ nav.navbar {
   border-bottom: solid 2px black;
 }
 
+.nav-brand-bx {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+}
+
 .header-img {
   width: auto;
   height: 50px;
@@ -1006,8 +1012,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 .footer-social-icon {
   display: flex;
   justify-content: center;
-  /* margin-bottom: 16px; */
-  margin: 16px 0 16px 0;
+  margin: 20px 0 20px 0;
 }
 
 .footer-social-icon a {
@@ -1097,10 +1102,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 @media (min-width: 768px) and (max-width: 991px) {
   .footer-input {
     padding: 9px 4px;
-  }
-  .footer-social-icon {
-    margin-bottom: 25px 0 25px 0;
-  }
+  } 
 }
 
 @media (min-width: 768px) {
