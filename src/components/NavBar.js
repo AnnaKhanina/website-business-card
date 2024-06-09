@@ -22,9 +22,6 @@ export const NavBar = () => {
             <div className="nav-brand-bx">
               <img className="navbar-logo" src={navbarlogo} alt="Header Img" />
             </div>
-            {/* <img className="navbar-logo" src={crown} alt="logo" /> */}
-            {/* <img className="navbar-logo" src={bannerking} alt="Header Img" />
-            <h2>BEERKING</h2> */}
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>

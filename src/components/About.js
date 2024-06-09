@@ -142,8 +142,6 @@ export const About = () => {
                 та свіже повітря. <br />
                 Ми слідкуємо за якістю та прислухаємося до своїх кліентів. Наші
                 постачальники відомі по всій країні. <br />
-                Також є доставка по місту Хмельницький, від 600 грн доставка
-                безкоштовна.
               </p>
               <div className="about-contact">
                 <ul className="about-contact-list">
@@ -156,9 +154,27 @@ export const About = () => {
                     <Calendar2 size={24} style={{ paddingRight: '5px' }} />
                     11:00 - 22:00
                   </li>
+                  <li className="about-contact-item">
+                    Доставка по місту Хмельницький, від 600 грн доставка
+                    безкоштовна.
+                  </li>
+                  <li className="about-contact-item">
+                    <span className="about-adress">
+                      Наливаємо за адресою:
+                      <ArrowRightCircle size={30} />
+                      <a
+                        href="https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%97%D0%B0%D0%BB%D0%B8%D0%B7%D0%BD%D1%8F%D0%BA%D0%B0,+8,+%D0%A5%D0%BC%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D1%86%D0%BA%D0%B8%D0%B9,+%D0%A5%D0%BC%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D1%86%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+29000/@49.4488455,27.0062596,19z/data=!3m1!4b1!4m6!3m5!1s0x4732070b2fd796f3:0x727ba0dda3d340fd!8m2!3d49.4488446!4d27.0069033!16s%2Fg%2F11bw3_3txg?entry=ttu"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="adress"
+                      >
+                        м.Хмельницький, вул.Залізняка 8/3
+                      </a>
+                    </span>
+                  </li>
                 </ul>
               </div>
-              <span className="about-adress">
+              {/* <span className="about-adress">
                 Наливаємо за адресою:
                 <ArrowRightCircle size={30} />
                 <a
@@ -169,7 +185,7 @@ export const About = () => {
                 >
                   м.Хмельницький, вул.Залізняка 8/3
                 </a>
-              </span>
+              </span> */}
             </div>
             <Modal
               isOpen={isOpen}

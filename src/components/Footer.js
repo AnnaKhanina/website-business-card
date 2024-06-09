@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { Container, Spinner } from 'react-bootstrap';
 import { toast } from 'react-toastify';
-import crown from '../assets/img/icons/crown.png';
+// import crown from '../assets/img/icons/crown.png';
+import navbarlogo from '../assets/img/logo-beer-king.png';
 import telegram from '../assets/img/icons/telegram.svg';
 import viber from '../assets/img/icons/viber.svg';
 import instagram from '../assets/img/icons/instagram.svg';
@@ -36,8 +37,9 @@ export const Footer = () => {
     <footer className="footer">
       <Container>
         <div className="footer-wrap">
-          <img className="navbar-logo" src={crown} alt="logo" />
-          <h2>BEERKING</h2>
+          <img className="navbar-logo" src={navbarlogo} alt="Header Img" />
+          {/* <img className="navbar-logo" src={crown} alt="logo" />
+          <h2>BEERKING</h2> */}
           <ul className="footer-list">
             <li className="footer-item">
               <div className="footer-social">

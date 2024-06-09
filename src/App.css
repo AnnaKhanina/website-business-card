@@ -164,22 +164,7 @@ nav.navbar {
 
 img.navbar-logo {
   width: auto;
-  height: 50px;
-}
-
-.navbar-brand h2 {
-  align-items: center;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  font-size: 24px;
-  font-weight: 400;
-  color: gold;
-}
-
-.navbar-brand h2:hover,
-.navbar-brand h2:focus {
-  color: #fff;
+  height: 90px;
 }
 
 nav.navbar .navbar-toggler-icon {
@@ -754,7 +739,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 }
 
 .about-title {
-  color: gold;
+  color: #fff;
   font-weight: 700;
   font-size: 45px;
   text-align: center;
@@ -782,7 +767,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
-  margin: 14px 0 75px 0;
+  margin: 16;
   text-align: left;
   text-indent: 20px;
 }
@@ -802,12 +787,12 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   letter-spacing: 0.8px;
   line-height: 1.5em;
   font-weight: 700;
-  color: gold;
+  color: #fff;
 }
 
 .about-contact-item:hover,
 .about-contact-item:focus {
-  color: #fff;
+  color: gold;
   cursor: pointer;
 }
 
@@ -816,10 +801,10 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 }
 
 .about-adress {
-  color: gold;
+  color: #fff;
   font-weight: 700;
   font-size: 20px;
-  margin-top: 60px;
+  /* margin-top: 60px; */
   letter-spacing: 0.8px;
   display: flex;
   align-items: center;
@@ -827,7 +812,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 
 .about-adress:hover,
 .about-adress:focus {
-  color: #fff;
+  color: gold;
 }
 
 .about span svg {
@@ -842,7 +827,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 }
 
 .adress {
-  color: #000000a6;
+  color: #fff;
   text-decoration: none;
   font-size: 20px;
   letter-spacing: 0.8px;
@@ -852,7 +837,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 
 .adress:hover,
 .adress:focus {
-  color: #fff;
+  color: gold;
 }
 
 .about-modal {
