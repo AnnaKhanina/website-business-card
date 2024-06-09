@@ -1,11 +1,12 @@
 import { useState } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
+import { HashLink } from 'react-router-hash-link';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { TelephoneFill } from 'react-bootstrap-icons';
 import navbarlogo from '../assets/img/logo-beer-king.png';
 import telegram from '../assets/img/icons/telegram.svg';
 import viber from '../assets/img/icons/viber.svg';
 import instagram from '../assets/img/icons/instagram.svg';
-import { HashLink } from 'react-router-hash-link';
-import { BrowserRouter as Router } from 'react-router-dom';
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState('home');
@@ -38,6 +39,15 @@ export const NavBar = () => {
                 Продукція
               </Nav.Link>
               <Nav.Link
+                href="#about"
+                className={
+                  activeLink === 'about' ? 'active navbar-link' : 'navbar-link'
+                }
+                onClick={() => onUpdateActiveLink('about')}
+              >
+                Про нас
+              </Nav.Link>
+              <Nav.Link
                 href="#partners"
                 className={
                   activeLink === 'partners'
@@ -47,15 +57,6 @@ export const NavBar = () => {
                 onClick={() => onUpdateActiveLink('partners')}
               >
                 Наші партнери
-              </Nav.Link>
-              <Nav.Link
-                href="#about"
-                className={
-                  activeLink === 'about' ? 'active navbar-link' : 'navbar-link'
-                }
-                onClick={() => onUpdateActiveLink('about')}
-              >
-                Про нас
               </Nav.Link>
             </Nav>
 
@@ -83,6 +84,8 @@ export const NavBar = () => {
                   <img src={instagram} alt="instagram" />
                 </a>
               </div>
+              <TelephoneFill size={24} style={{ paddingRight: '5px' }} />
+              +380 730 744 434
               <HashLink to="#connect">
                 <button className="navbar-btn">
                   <span className="navbar-btn-text">З'вязок</span>

@@ -350,107 +350,6 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     }
 }
 
-/* Banner */
-
-.banner {
-  margin-top: 0;
-  padding: 200px 0 100px 0; 
-  background-color: gold; 
-  }
-
-
-
-.banner-text { 
-  color: #000000a6;
-  font-size: 24px;
-  margin-bottom: 26px;
-  text-align: left;
-  text-indent: 20px;
-  letter-spacing: 0.8px;
-  line-height: 1.5em;
-}
-
-.banner ul {
-  list-style: none; 
-  text-align: center;
-}
-
-.banner li {
-  margin-bottom: 20px; 
-  font-size: 18px;
-  letter-spacing: 0.8px;
-  line-height: 1.5em;
-  font-weight: 700;  
-  color: #000000a6;    
-}
-
-.banner li:hover,
-.banner li:focus {
-  color: #fff;
-  cursor: pointer;
-}
-
-.banner li:last-child{
-  margin-bottom: 0;
-}
-
-.banner-icons {   
-  height: 32px;
-  width: 32px;
-  margin-right: 10px;
-}
-
-.banner-icons:last-child {
-  margin-right: 0;
-}
- 
-.banner span {
-  color: #000000a6;
-  font-weight: 700;
-  font-size: 20px;
-  margin-top: 60px;
-  letter-spacing: 0.8px;
-  display: flex;
-  align-items: center;
-}
-
-.banner span:hover,
-.banner span:focus {
-  color: #fff;
-}
-
-.banner span svg {
-  font-size: 25px;
-  margin-left: 10px;
-  transition: 0.3s ease-in-out;
-  line-height: 1;
-}
-
-.banner span:hover svg {
-  margin-left: 25px;
-}
-
-.adress {
-  color: #000000a6;
-  text-decoration: none;
-  font-size: 20px;
-  letter-spacing: 0.8px;
-  line-height: 1.5em;
-  margin-left: 35px;
-}
-
-.adress:hover,
-.adress:focus {
-  color: #fff; 
-}
-
-
-@media (min-width: 992px) {
-  .banner {
-    padding: 160px 0 100px 0;
-  }
-}
-
 /* Products */
 
 .products {
@@ -768,10 +667,9 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 
 .about-text {
   color: #B8B8B8;
-  font-size: 18px;
-  letter-spacing: 0.8px;
+  font-size: 18px; 
   line-height: 1.5em; 
-  text-align: left;
+  text-align: justify;
   text-indent: 20px;
 }
 
@@ -806,11 +704,8 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 .about-adress {
   color: #fff;
   font-weight: 700;
-  font-size: 20px;
-  /* margin-top: 60px; */
+  font-size: 20px; 
   letter-spacing: 0.8px;
-  /* display: flex;
-  align-items: center; */
 }
 
 .about-adress:hover,
@@ -890,6 +785,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 }
 
 /* Contact */
+
 .contact { 
   background: gold;
   padding: 20px 0 20px 0;
@@ -927,6 +823,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   letter-spacing: 0.8px;
   transition: 0.3s ease-in-out;
 }
+
 .contact form textarea {
   height: 120px;
 }

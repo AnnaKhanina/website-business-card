@@ -38,8 +38,6 @@ export const Footer = () => {
       <Container>
         <div className="footer-wrap">
           <img className="navbar-logo" src={navbarlogo} alt="Header Img" />
-          {/* <img className="navbar-logo" src={crown} alt="logo" />
-          <h2>BEERKING</h2> */}
           <ul className="footer-list">
             <li className="footer-item">
               <div className="footer-social">
