@@ -3,7 +3,7 @@ import axios from 'axios';
 import { Container, Row, Col, Spinner } from 'react-bootstrap';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import contactImg from '../assets/img/logo-beerking1.png';
+import contactImg from '../assets/img/logo-beer-king.png';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 

@@ -72,7 +72,7 @@ export const Products = () => {
                 </div>
               )}
             </TrackVisibility>
-            <p>
+            <p className="products-text">
               *Ассортимент може змінюватись, тому треба уточнювати актуальність
               за номером телефона або в наших соцмережах.
             </p>

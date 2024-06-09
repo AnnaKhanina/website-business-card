@@ -373,10 +373,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   background-color: gold; 
   }
 
-.logo-img {
-  width: 350px;
-  height: auto;  
-}
+
 
 .banner-text { 
   color: #000000a6;
@@ -472,7 +469,6 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 /* Products */
 
 .products {
-  /* padding: 80px 0; */
   margin-top: 0;
   padding: 150px 0 100px 0;
   position: relative;
@@ -556,6 +552,10 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 .nav-link#products-tabs-tab-third {
   border: 3px solid #2c2c2c;
   border-radius: 0 55px 55px 0;
+}
+
+.products-text {
+  color: #fff;
 }
 
 /* beer */
@@ -772,6 +772,11 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   margin: 0 auto 15px auto;
 }
 
+.about-king-img {
+  width: 350px;
+  height: auto;
+}
+
 .about-text {
   color: #B8B8B8;
   font-size: 18px;
@@ -780,6 +785,74 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   margin: 14px 0 75px 0;
   text-align: left;
   text-indent: 20px;
+}
+
+/* .about-contact {
+
+} */
+
+.about-contact-list {
+  list-style: none;
+  text-align: center;
+}
+
+.about-contact-item {
+  margin-bottom: 20px;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  font-weight: 700;
+  color: gold;
+}
+
+.about-contact-item:hover,
+.about-contact-item:focus {
+  color: #fff;
+  cursor: pointer;
+}
+
+.about-contact-item:last-child {
+  margin-bottom: 0;
+}
+
+.about-adress {
+  color: gold;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 60px;
+  letter-spacing: 0.8px;
+  display: flex;
+  align-items: center;
+}
+
+.about-adress:hover,
+.about-adress:focus {
+  color: #fff;
+}
+
+.about span svg {
+  font-size: 25px;
+  margin-left: 10px;
+  transition: 0.3s ease-in-out;
+  line-height: 1;
+}
+
+.about span:hover svg {
+  margin-left: 25px;
+}
+
+.adress {
+  color: #000000a6;
+  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin-left: 35px;
+}
+
+.adress:hover,
+.adress:focus {
+  color: #fff;
 }
 
 .about-modal {

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
-import bannerking from '../assets/img/king.png';
+import navbarlogo from '../assets/img/logo-beer-king.png';
 import telegram from '../assets/img/icons/telegram.svg';
 import viber from '../assets/img/icons/viber.svg';
 import instagram from '../assets/img/icons/instagram.svg';
@@ -20,8 +20,7 @@ export const NavBar = () => {
         <Container>
           <Navbar.Brand href="/">
             <div className="nav-brand-bx">
-              <h2>BEERKING</h2>
-              <img className="navbar-logo" src={bannerking} alt="Header Img" />
+              <img className="navbar-logo" src={navbarlogo} alt="Header Img" />
             </div>
             {/* <img className="navbar-logo" src={crown} alt="logo" /> */}
             {/* <img className="navbar-logo" src={bannerking} alt="Header Img" />

@@ -13,11 +13,6 @@ import {
   TelephoneFill,
   Calendar2,
 } from 'react-bootstrap-icons';
-import bannerIcon1 from '../assets/img/icons/banner-icon1.svg';
-import bannerIcon2 from '../assets/img/icons/banner-icon2.png';
-import bannerIcon3 from '../assets/img/icons/banner-icon3.png';
-import bannerIcon4 from '../assets/img/icons/banner-icon4.png';
-import bannerIcon5 from '../assets/img/icons/banner-icon5.png';
 
 Modal.setAppElement('#root');
 
@@ -150,52 +145,20 @@ export const About = () => {
                 Також є доставка по місту Хмельницький, від 600 грн доставка
                 безкоштовна.
               </p>
-              <div>
-                <ul>
-                  <li>
-                    <img
-                      className="banner-icons"
-                      src={bannerIcon1}
-                      alt="icon a glass of beer"
-                    />
-                    <img
-                      className="banner-icons"
-                      src={bannerIcon3}
-                      alt="icon fish"
-                    />
-                    <img
-                      className="banner-icons"
-                      src={bannerIcon2}
-                      alt="icon cheese"
-                    />
-                    <img
-                      className="banner-icons"
-                      src={bannerIcon4}
-                      alt="icon peanut"
-                    />
-                    <img
-                      className="banner-icons"
-                      src={bannerIcon5}
-                      alt="icon popcorn"
-                    />
-                    <img
-                      className="banner-icons"
-                      src={bannerIcon1}
-                      alt="icon a glass of beer"
-                    />
-                  </li>
-                  <li>
+              <div className="about-contact">
+                <ul className="about-contact-list">
+                  <li className="about-contact-item">
                     <TelephoneFill size={24} style={{ paddingRight: '5px' }} />
                     +380 730 744 434
                   </li>
-                  <li>
+                  <li className="about-contact-item">
                     {' '}
                     <Calendar2 size={24} style={{ paddingRight: '5px' }} />
                     11:00 - 22:00
                   </li>
                 </ul>
               </div>
-              <span>
+              <span className="about-adress">
                 Наливаємо за адресою:
                 <ArrowRightCircle size={30} />
                 <a
