@@ -84,8 +84,10 @@ export const NavBar = () => {
                   <img src={instagram} alt="instagram" />
                 </a>
               </div>
-              <TelephoneFill size={24} style={{ paddingRight: '5px' }} />
-              +380 730 744 434
+              <div className="navbar-phone-bx">
+                <TelephoneFill size={24} style={{ paddingRight: '5px' }} />
+                <span className="navbar-phone">+380 730 744 434</span>
+              </div>
               <HashLink to="#connect">
                 <button className="navbar-btn">
                   <span className="navbar-btn-text">З'вязок</span>
