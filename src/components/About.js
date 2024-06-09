@@ -42,70 +42,6 @@ export const About = () => {
   };
 
   return (
-    // <section className="about" id="about">
-    //   <div className="container">
-    //     <div className="row">
-    //       <div className="col-12">
-    //         <div className="about-bx wow zoomIn">
-    //           <h2 className="about-title">Про нас</h2>
-    //           <Carousel
-    //             responsive={responsive}
-    //             infinite={true}
-    //             className="owl-carousel owl-theme about-slider"
-    //           >
-    //             {images.map((image, index) => (
-    //               <div
-    //                 key={index}
-    //                 className="about-item"
-    //                 onClick={() => {
-    //                   setSelectedImage(image);
-    //                   setIsOpen(true);
-    //                 }}
-    //               >
-    //                 <img
-    //                   src={image}
-    //                   className="about-img"
-    //                   alt="beerking store"
-    //                 />
-    //               </div>
-    //             ))}
-    //           </Carousel>
-    //           <p className="about-text">
-    //             "Beer King" крамниця розливних освіжаючих напоїв в центрі
-    //             чудового мальовничого місця біля озера, де затишок, чудовий
-    //             захід сонця та свіже повітря. <br />
-    //             Ми слідкуємо за якістю та прислухаємося до своїх кліентів. Наші
-    //             постачальники з усїєї України, які відомі по всій країні. <br />
-    //             Ассортимент може змінюватись, тому треба уточнювати актуальність
-    //             за номером телефона або в наших соцмережах. Також є доставка по
-    //             місту Хмельницький, від 600 грн доставка безкоштовна.
-    //           </p>
-    //         </div>
-    //       </div>
-    //     </div>
-    //   </div>
-    //   <Modal
-    //     isOpen={isOpen}
-    //     onRequestClose={() => setIsOpen(false)}
-    //     contentLabel="Image Modal"
-    //     className="about-modal"
-    //     overlayClassName="overlay"
-    //   >
-    //     {selectedImage && (
-    //       <div>
-    //         <img
-    //           src={selectedImage}
-    //           alt="Enlarged beerking store"
-    //           className="modal-image"
-    //         />
-    //         <button onClick={() => setIsOpen(false)} className="close-button">
-    //           <img className="icon-close" src={iconClose} alt="logo" />
-    //         </button>
-    //       </div>
-    //     )}
-    //   </Modal>
-    // </section>
-
     <section className="about" id="about">
       <Container>
         <Row className="align-items-center">
@@ -134,15 +70,19 @@ export const About = () => {
                   </div>
                 ))}
               </Carousel>
-              <p className="about-text">
-                "Beer King" - Крамниця розливного живого крафтового пива, сидра,
-                вина та лимонадів. Смаколики до напоїв, м'ясні, рибні, сирні та
-                різноманітні снеки. Магазин знаходиться в центрі чудового
-                мальовничого місця біля озера, де затишок, чудовий захід сонця
-                та свіже повітря. <br />
-                Ми слідкуємо за якістю та прислухаємося до своїх кліентів. Наші
-                постачальники відомі по всій країні. <br />
-              </p>
+              <div className="about-text-wrap">
+                <p className="about-text">
+                  "Beer King" - Крамниця розливного живого крафтового пива,
+                  сидра, вина та лимонадів. Смаколики до напоїв, м'ясні, рибні,
+                  сирні та різноманітні снеки. Магазин знаходиться в центрі
+                  чудового мальовничого місця біля озера, де затишок, чудовий
+                  захід сонця та свіже повітря.
+                </p>
+                <p className="about-text">
+                  Ми слідкуємо за якістю та прислухаємося до своїх кліентів.
+                  Наші постачальники відомі по всій країні.
+                </p>
+              </div>
               <div className="about-contact">
                 <ul className="about-contact-list">
                   <li className="about-contact-item">
@@ -159,7 +99,7 @@ export const About = () => {
                     безкоштовна.
                   </li>
                   <li className="about-contact-item">
-                    <span className="about-adress">
+                    <p className="about-adress">
                       Наливаємо за адресою:
                       <ArrowRightCircle size={30} />
                       <a
@@ -170,7 +110,7 @@ export const About = () => {
                       >
                         м.Хмельницький, вул.Залізняка 8/3
                       </a>
-                    </span>
+                    </p>
                   </li>
                 </ul>
               </div>

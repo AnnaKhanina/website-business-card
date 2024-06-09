@@ -27,9 +27,9 @@ export const CyderCard = ({
         <div className="beer-txtx">
           <h4>{title}</h4>
           <p className="beer-discr">{description}</p>
-          <img className="navbar-logo" src={crown} alt="glass of Beer" />
-          <img className="navbar-logo" src={glass} alt="logo" />
-          <img className="navbar-logo" src={barley} alt="logo" />
+          <img className="products-icon" src={crown} alt="crown" />
+          <img className="products-icon" src={glass} alt="glass of Beer" />
+          <img className="products-icon" src={barley} alt="malt" />
         </div>
       </div>
     </Col>
