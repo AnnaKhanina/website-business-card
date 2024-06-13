@@ -596,23 +596,6 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   margin-top: 50px;
 }
 
-/* .partners h2 {
-  font-weight: 700;
-  font-size: 45px;
-  color:#fff
-} */
-
-/* .partners h3 {
-  color: #fff;
-  font-weight: 700;
-  font-size: 20px;
-  letter-spacing: 0.8px;
-  line-height: 1.5em;
-  margin: 14px auto 30px auto;
-  text-align: center;
-  width: 56%;
-} */
-
 .partner-imgbx {
   position: relative;
   border: 2px solid #2c2c2c;
@@ -743,6 +726,10 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   color: #B8B8B8;
   font-size: 18px;
   line-height: 1.5em;
+}
+
+.hide-arrows .react-multiple-carousel__arrow {
+  display: none !important;
 }
 
 .about-modal {

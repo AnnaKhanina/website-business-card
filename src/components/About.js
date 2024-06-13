@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
@@ -19,6 +19,7 @@ Modal.setAppElement('#root');
 export const About = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
+  const [hideArrows, setHideArrows] = useState(false);
 
   const images = [about1, about2, about3, about4];
 
@@ -41,6 +42,18 @@ export const About = () => {
     },
   };
 
+  const handleScroll = () => {
+    setHideArrows(true);
+    setTimeout(() => setHideArrows(false), 1000);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <section className="about" id="about">
       <Container>
@@ -52,7 +65,9 @@ export const About = () => {
               <Carousel
                 responsive={responsive}
                 infinite={true}
-                className="owl-carousel owl-theme about-slider"
+                className={`owl-carousel owl-theme about-slider ${
+                  hideArrows ? 'hide-arrows' : ''
+                }`}
               >
                 {images.map((image, index) => (
                   <div
@@ -61,6 +76,7 @@ export const About = () => {
                     onClick={() => {
                       setSelectedImage(image);
                       setIsOpen(true);
+                      setHideArrows(true);
                     }}
                   >
                     <img
@@ -125,7 +141,10 @@ export const About = () => {
             </div>
             <Modal
               isOpen={isOpen}
-              onRequestClose={() => setIsOpen(false)}
+              onRequestClose={() => {
+                setIsOpen(false);
+                setHideArrows(false);
+              }}
               contentLabel="Image Modal"
               className="about-modal"
               overlayClassName="overlay"
@@ -138,7 +157,10 @@ export const About = () => {
                     className="modal-image"
                   />
                   <button
-                    onClick={() => setIsOpen(false)}
+                    onClick={() => {
+                      setIsOpen(false);
+                      setHideArrows(false);
+                    }}
                     className="close-button"
                   >
                     <img className="icon-close" src={iconClose} alt="logo" />

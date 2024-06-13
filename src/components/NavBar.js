@@ -26,7 +26,7 @@ export const NavBar = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [expanded]);
+  });
 
   return (
     <Router>
