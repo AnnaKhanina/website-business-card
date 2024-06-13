@@ -37,7 +37,7 @@ export const Footer = () => {
     <footer className="footer">
       <Container>
         <div className="footer-wrap">
-          <img className="navbar-logo" src={navbarlogo} alt="Header Img" />
+          <img className="footer-logo" src={navbarlogo} alt="Footer logo" />
           <ul className="footer-list">
             <li className="footer-item">
               <div className="footer-social">
