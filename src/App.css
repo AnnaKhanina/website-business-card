@@ -518,7 +518,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   letter-spacing: 0.7px;
   line-height: 1em;
   color: gold; 
-  -webkit-text-stroke: 0.5px #2c2c2c;
+  /* -webkit-text-stroke: 0.5px #2c2c2c; */
 } 
 
  .beer-discr {
@@ -529,7 +529,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
    font-weight: 500;
    font-size: 18px;
    letter-spacing: 0.8px;
-   text-align: start;
+   text-align: justify;
    padding: 0 20px 10px 20px;
    text-indent: 1em;
  }
