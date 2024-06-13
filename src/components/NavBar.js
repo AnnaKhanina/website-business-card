@@ -1,8 +1,7 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { HashLink } from 'react-router-hash-link';
 import { BrowserRouter as Router } from 'react-router-dom';
-import { TelephoneFill } from 'react-bootstrap-icons';
 import navbarlogo from '../assets/img/logo-beer-king.png';
 import telegram from '../assets/img/icons/telegram.svg';
 import viber from '../assets/img/icons/viber.svg';
@@ -10,21 +9,38 @@ import instagram from '../assets/img/icons/instagram.svg';
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState('home');
+  const [expanded, setExpanded] = useState(false);
 
   const onUpdateActiveLink = (value) => {
     setActiveLink(value);
   };
 
+  const handleScroll = () => {
+    if (expanded) {
+      setExpanded(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [expanded]);
+
   return (
     <Router>
-      <Navbar expand="lg" className="transition-navbar">
+      <Navbar expand="lg" className="transition-navbar" expanded={expanded}>
         <Container>
           <Navbar.Brand href="/">
             <div className="nav-brand-bx">
               <img className="navbar-logo" src={navbarlogo} alt="Header Img" />
             </div>
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav">
+          <Navbar.Toggle
+            aria-controls="basic-navbar-nav"
+            onClick={() => setExpanded(!expanded)}
+          >
             <span className="navbar-toggler-icon"></span>
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
