@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { Container, Spinner } from 'react-bootstrap';
 import { toast } from 'react-toastify';
-// import crown from '../assets/img/icons/crown.png';
 import navbarlogo from '../assets/img/logo-beer-king.png';
 import telegram from '../assets/img/icons/telegram.svg';
 import viber from '../assets/img/icons/viber.svg';

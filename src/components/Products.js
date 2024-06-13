@@ -72,39 +72,9 @@ export const Products = () => {
                 </div>
               )}
             </TrackVisibility>
-            {/* <p className="products-text">
-              *Ассортимент може змінюватись, тому треба уточнювати актуальність
-              за номером телефона або в наших соцмережах.
-            </p> */}
             <p className="products-text">
               *Ассортимент може змінюватись, тому треба уточнювати актуальність
-              за
-              <a href="tel:+380730744434">номером телефона</a> або в наших
-              соцмережах:
-              <a
-                href="https://t.me/beer_king_khm"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Telegram
-              </a>
-              ,
-              <a
-                href="https://www.viber.com/ua/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Viber
-              </a>
-              ,
-              <a
-                href="https://www.instagram.com/beer_king_market?igsh=MTJmZHRlMmd1Y2Ywag=="
-                target="_blank"
-                rel="noreferrer"
-              >
-                Instagram
-              </a>
-              .
+              за номером телефона або в наших соцмережах.
             </p>
             <ModalWindow />
           </Col>
