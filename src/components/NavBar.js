@@ -61,6 +61,13 @@ export const NavBar = () => {
             </Nav>
 
             <div className="navbar-media d-flex align-items-center">
+              <div className="navbar-phone-bx">
+                <TelephoneFill
+                  size={24}
+                  style={{ paddingRight: '5px', color: 'white' }}
+                />
+                <span className="navbar-phone">+380 730 744 434</span>
+              </div>
               <div className="social-icon d-flex align-items-center">
                 <a
                   href="https://t.me/beer_king_khm"
@@ -83,10 +90,6 @@ export const NavBar = () => {
                 >
                   <img src={instagram} alt="instagram" />
                 </a>
-              </div>
-              <div className="navbar-phone-bx">
-                <TelephoneFill size={24} style={{ paddingRight: '5px' }} />
-                <span className="navbar-phone">+380 730 744 434</span>
               </div>
               <HashLink to="#connect">
                 <button className="navbar-btn">
