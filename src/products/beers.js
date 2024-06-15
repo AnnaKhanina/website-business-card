@@ -10,6 +10,8 @@ import beerImg9 from '../assets/img/products/satoshi.png';
 import beerImg10 from '../assets/img/products/rizdvyne.png';
 import beerImg11 from '../assets/img/products/sangushko.png';
 import beerImg12 from '../assets/img/products/lviv-dunkel.png';
+import beerImg13 from '../assets/img/products/lesgak.png';
+import beerImg14 from '../assets/img/products/hoegaarden-blanche.png';
 
 export const beers = [
   {
@@ -125,12 +127,32 @@ export const beers = [
   },
   {
     title: 'Sangushko',
-    beerTitle: 'Світле фільтроване',
+    beerTitle: 'Світле фільтроване непастерезоване',
     beerStrength: '5.5%',
     beerDensity: '14%',
     beerFactory: 'м.Славута, Славута-Пивзавод',
     description:
       'Світле і м’яке пиво преміум класу. Напій містить в собі ніжні ноти меду і лугових трав, заворожує і одночасно заспокоює.',
     imgUrl: beerImg11,
+  },
+  {
+    title: 'Пльзенский Лежак',
+    beerTitle: 'Світле фільтроване непастерезоване',
+    beerStrength: '4%',
+    beerDensity: '14%',
+    beerFactory: 'м.Славута, Славута-Пивзавод',
+    description:
+      'Лагерне, живе пиво. Для виробництва використовують світлий ячмінний солод, український шишковий хміль з додаванням чеського тонкоароматичного хмелю «Жатецький» та м’яка вода.',
+    imgUrl: beerImg13,
+  },
+  {
+    title: 'Hoegaarden Blanche',
+    beerTitle: 'Світле нефільтроване',
+    beerStrength: '4.9%',
+    beerDensity: '--',
+    beerFactory: 'м.Славута, Славута-Пивзавод',
+    description:
+      'Легке нефільтроване біле пшеничне пиво з виразними тонами цитрусів і прянощів. Традиційно вживається в шестигранних склянках. Поширений варіант додавання шматочків свіжих апельсинів попередньо видавивши їх сік в пиво..',
+    imgUrl: beerImg14,
   },
 ];
