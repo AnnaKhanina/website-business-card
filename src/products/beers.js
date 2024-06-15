@@ -42,7 +42,7 @@ export const beers = [
     imgUrl: beerImg5,
   },
   {
-    title: 'Дункель',
+    title: 'Дункель Waissburg',
     beerTitle: 'Темне фільтроване',
     beerStrength: '4,7%',
     beerDensity: '11%',
@@ -89,6 +89,16 @@ export const beers = [
     beerFactory: 'м.Львів, Львівська пивоварня Carlsberg Ukraine',
     description:
       'Пиво пшеничне з фруктовими нотками, яке виробляється по оригінальній рецептурі, розробленій у Франції. Має м’який солодовий смак з тонким ароматом цитрусових та апельсинової цедри.',
+    imgUrl: beerImg7,
+  },
+  {
+    title: 'Дункель Львывське',
+    beerTitle: 'Темне фільтроване',
+    beerStrength: '4,7%',
+    beerDensity: '11%',
+    beerFactory: 'м.Львів, Львівська пивоварня Carlsberg Ukraine',
+    description:
+      'Завдяки технології обсмаження солоду, відрізняється яскраво вираженим карамельним смаком, приємною хмельовою гіркотою та легким солодким присмаком.',
     imgUrl: beerImg7,
   },
 
