@@ -15,7 +15,6 @@ export const BeerCard = ({
   return (
     <Col size={12} sm={6} md={4}>
       <div className="beer-imgbx">
-        {/* <img src={imgUrl} alt="beer card" /> */}
         <img src={imgUrl} alt={title} />
         <p className="beer-title">{beerTitle}</p>
         <p>

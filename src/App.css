@@ -382,6 +382,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   margin: 14px auto 30px auto;
   text-align: center;
   width: 56%;
+  white-space: nowrap;
 }
 
 .products .nav.nav-pills {
@@ -477,6 +478,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   color: gold;
   font-size: 20px;
   font-weight: 700;
+  margin-top: 10px;
 }
 
 .strength,
@@ -518,7 +520,6 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   letter-spacing: 0.7px;
   line-height: 1em;
   color: gold; 
-  /* -webkit-text-stroke: 0.5px #2c2c2c; */
 } 
 
  .beer-discr {
@@ -722,10 +723,11 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   color: gold;
 }
 
-.abour-delivery {
+.about-delivery {
   color: #B8B8B8;
   font-size: 18px;
   line-height: 1.5em;
+  font-weight: 600;
 }
 
 .hide-arrows .react-multiple-carousel__arrow {

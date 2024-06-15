@@ -155,7 +155,7 @@ export const Contact = () => {
                         <input
                           type="tel"
                           value={formDetails.phone}
-                          placeholder="Телефон +38"
+                          placeholder="Телефон +38 _ _ _"
                           onChange={(e) =>
                             onFormUpdate('phone', e.target.value)
                           }
