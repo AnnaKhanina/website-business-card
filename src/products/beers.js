@@ -9,6 +9,7 @@ import beerImg8 from '../assets/img/products/pils.png';
 import beerImg9 from '../assets/img/products/satoshi.png';
 import beerImg10 from '../assets/img/products/rizdvyne.png';
 import beerImg11 from '../assets/img/products/sangushko.png';
+import beerImg12 from '../assets/img/products/lviv-dunkel.png';
 
 export const beers = [
   {
@@ -92,14 +93,14 @@ export const beers = [
     imgUrl: beerImg7,
   },
   {
-    title: 'Дункель Львывське',
+    title: 'Дункель Львівське',
     beerTitle: 'Темне фільтроване',
     beerStrength: '4,7%',
     beerDensity: '11%',
     beerFactory: 'м.Львів, Львівська пивоварня Carlsberg Ukraine',
     description:
       'Завдяки технології обсмаження солоду, відрізняється яскраво вираженим карамельним смаком, приємною хмельовою гіркотою та легким солодким присмаком.',
-    imgUrl: beerImg7,
+    imgUrl: beerImg12,
   },
 
   {
