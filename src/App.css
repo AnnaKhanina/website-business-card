@@ -381,7 +381,6 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   line-height: 1.5em;
   margin: 14px auto 30px auto;
   text-align: center;
-  width: 56%;
   white-space: nowrap;
 }
 
@@ -728,7 +727,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   font-size: 18px;
   line-height: 1.5em;
   font-weight: 600;
-  text-decoration: #fff;
+  border-bottom: 1px #fff;
 }
 
 .hide-arrows .react-multiple-carousel__arrow {

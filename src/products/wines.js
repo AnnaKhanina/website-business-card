@@ -12,6 +12,10 @@ import wineImg11 from '../assets/img/products/ahnuar.png';
 import wineImg12 from '../assets/img/products/ridniykray.png';
 import wineImg13 from '../assets/img/products/lychee.png';
 import wineImg14 from '../assets/img/products/vishnya.png';
+import wineImg15 from '../assets/img/products/merlo.png';
+import wineImg16 from '../assets/img/products/odessa-black.png';
+import wineImg17 from '../assets/img/products/shato-grona.png';
+import wineImg18 from '../assets/img/products/strawberrry.png';
 
 export const wines = [
   {
@@ -33,6 +37,16 @@ export const wines = [
     description:
       'Вино з нотою персику. Смак	злагоджений, гармонійний, м’який з легким квітковим післясмаком. Вино стане приємним аперитивом, може вживатися в чистому вигляді без закусок.',
     imgUrl: wineImg2,
+  },
+  {
+    title: 'Шато Грона',
+    wineTitle: 'Вино ординарне столове напівсухе біле',
+    wineStrength: '9–14%',
+    wineSugar: '0.5-2.5%',
+    wineFactory: 'м.Болград, TM CHATEAU GRONA',
+    description:
+      'Вино має легкий, квітковий аромат, гармоній смак з помірною свіжістю. 	Вино можна подавати як аперитив, добре доповнення до морепродуктів та салатів.',
+    imgUrl: wineImg17,
   },
   {
     title: 'Княгиня Лідія',
@@ -136,6 +150,27 @@ export const wines = [
     imgUrl: wineImg12,
   },
   {
+    title: 'Мерло',
+    wineTitle: 'Вино ординарне сортове столове червоне сухе ',
+    wineStrength: '9.5–14%',
+    wineSugar: '0.3%',
+    wineFactory: 'м.Болград, TM TIZIANO',
+    description:
+      "Вино має м'який, гармонійний смак з бархатистою текстурою і демонструє приємні, свіжі тони стиглих фруктів. У тонкому ароматі вина відчуваються легкі тони дуба, що вказує на бочкову витримку.",
+    imgUrl: wineImg15,
+  },
+  {
+    title: 'Одеський Чорний',
+    wineTitle: 'Вино ординарне сортове столове червоне сухе ',
+    wineStrength: '9.5–14%',
+    wineSugar: '0.3%',
+    wineFactory: 'м.Болград, TM TIZIANO',
+    description:
+      "Прекрасне елегантне вино з м'якою текстурою і щільними тонами вишня, сливи, пасльону і лохини. Післясмак володіє завзятістю і стійкістю, завершуючи нотами тютюну, спецій і тостів.",
+    imgUrl: wineImg16,
+  },
+
+  {
     title: 'Лічі',
     wineTitle: 'Напій винний Лічі',
     wineStrength: '6.7%',
@@ -154,5 +189,15 @@ export const wines = [
     description:
       'Ідеально поєднується з десертами, особливо тими, які містять вишню або шоколад. Також чудовий вибір для закусок із сиром або легких фруктових салатів. Подавайте охолодженим.',
     imgUrl: wineImg14,
+  },
+  {
+    title: 'Полуниця',
+    wineTitle: 'Напій винний Полуниця',
+    wineStrength: '6.9%',
+    wineSugar: '9-16%',
+    wineFactory: 'м.Болград, TM FRUIGIO',
+    description:
+      'Витончений і солодкий смак цього вина створений для того, щоб вам було приємно насолоджуватися кожним ковтком. Ароматна та сікава полуниця грає в головній ролі, даруючи вам справжню літню насолоду.',
+    imgUrl: wineImg18,
   },
 ];

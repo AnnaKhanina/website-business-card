@@ -1,8 +1,11 @@
 import cyderImg1 from '../assets/img/products/fragolino.png';
-import cyderImg2 from '../assets/img/products/wildberry.png';
+import cyderImg2 from '../assets/img/products/berries.png';
 import cyderImg3 from '../assets/img/products/grikh.png';
 import cyderImg4 from '../assets/img/products/mango.png';
-import cyderImg5 from '../assets/img/products/zbiten2.png';
+import cyderImg5 from '../assets/img/products/white-cherry.png';
+import cyderImg6 from '../assets/img/products/strawberry-banana.png';
+import cyderImg7 from '../assets/img/products/currants.png';
+import cyderImg8 from '../assets/img/products/zbiten2.png';
 
 export const cyders = [
   {
@@ -42,12 +45,39 @@ export const cyders = [
     imgUrl: cyderImg4,
   },
   {
+    title: 'Біла Черешня',
+    cyderTitle: 'Сидр',
+    cyderFactory: 'м.Золотоноша, Royal Fruit Garden',
+    cyderStrength: '5%',
+    description:
+      'Напій жовтуватого кольору з насиченим ароматом білої черешні й легкими тонами яблук. Смак з легкою кислинкою завершується післясмаком свіжої черешні.',
+    imgUrl: cyderImg5,
+  },
+  {
+    title: 'Полуниця Банан',
+    cyderTitle: 'Сидр',
+    cyderFactory: 'м.Золотоноша, Royal Fruit Garden',
+    cyderStrength: '5%',
+    description:
+      'Соковитий та солодкий напій, який поєднує ароматну полуницю з кремовим смаком банана, що відтінений яблучною кислинкою. Напій  надає нам комбінацію фруктових смаків, яка дарує насолоду та свіжість',
+    imgUrl: cyderImg6,
+  },
+  {
+    title: 'Смородина',
+    cyderTitle: 'Сидр',
+    cyderFactory: 'м.Золотоноша, Royal Fruit Garden',
+    cyderStrength: '5%',
+    description:
+      'Освіжаючий пікантний купажний сидр, що отримують шляхом зброджування високоякісного яблучного соку з винним настоєм чорної смородини. Таке поєднання надає напою приємний смак та аромат.',
+    imgUrl: cyderImg7,
+  },
+  {
     title: 'Збітень',
     cyderTitle: 'Сидр',
     cyderFactory: 'м.Золотоноша, Royal Fruit Garden',
     cyderStrength: '5%',
     description:
       'Це солодкий медовий напій, основним компонентом якогоє мед. Крім того, для його приготування використовували воду, різні прянощі та трави, в тому числі лякарські.',
-    imgUrl: cyderImg5,
+    imgUrl: cyderImg8,
   },
 ];

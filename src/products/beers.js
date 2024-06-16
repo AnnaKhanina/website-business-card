@@ -1,3 +1,4 @@
+import beerImg from '../assets/img/products/hoegaarden-blanche.png';
 import beerImg1 from '../assets/img/products/ch-lager.png';
 import beerImg2 from '../assets/img/products/chblanc.png';
 import beerImg3 from '../assets/img/products/dunkel.png';
@@ -11,9 +12,19 @@ import beerImg10 from '../assets/img/products/rizdvyne.png';
 import beerImg11 from '../assets/img/products/sangushko.png';
 import beerImg12 from '../assets/img/products/lviv-dunkel.png';
 import beerImg13 from '../assets/img/products/lesgak.png';
-import beerImg14 from '../assets/img/products/hoegaarden-blanche.png';
+import beerImg14 from '../assets/img/products/dusha.png';
 
 export const beers = [
+  {
+    title: 'Hoegaarden Blanche',
+    beerTitle: 'Світле нефільтроване',
+    beerStrength: '4.9%',
+    beerDensity: '--',
+    beerFactory: 'м.Чернігів, AB InBev Efes Україна',
+    description:
+      'Легке нефільтроване біле пшеничне пиво з виразними тонами цитрусів і прянощів. Традиційно вживається в шестигранних склянках. Поширений варіант додавання шматочків свіжих апельсинів попередньо видавивши їх сік в пиво.',
+    imgUrl: beerImg,
+  },
   {
     title: 'Чеський Лагер',
     beerTitle: 'Світле фільтроване',
@@ -146,13 +157,13 @@ export const beers = [
     imgUrl: beerImg13,
   },
   {
-    title: 'Hoegaarden Blanche',
-    beerTitle: 'Світле нефільтроване',
-    beerStrength: '4.9%',
-    beerDensity: '--',
-    beerFactory: 'м.Славута, Славута-Пивзавод',
+    title: 'Пивна Душа Преміум',
+    beerTitle: 'Світле фільтроване непастерезоване',
+    beerStrength: '5.2%',
+    beerDensity: '13%',
+    beerFactory: 'м.Луцьк, Zeman',
     description:
-      'Легке нефільтроване біле пшеничне пиво з виразними тонами цитрусів і прянощів. Традиційно вживається в шестигранних склянках. Поширений варіант додавання шматочків свіжих апельсинів попередньо видавивши їх сік в пиво..',
+      'Світлий насичений лагер. Має чудову хлібну ароматику, приємний смак та легку солодкуватість. Додавання рису надає цьому сорту такий м’який смак. Хмелева гірчинка збалансована, тонка та ледь помітна. Пиво питке з гарною щільною пінною шапкою.',
     imgUrl: beerImg14,
   },
 ];

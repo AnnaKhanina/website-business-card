@@ -108,11 +108,11 @@ export const About = () => {
                   Ми слідкуємо за якістю та прислухаємося до своїх клієнтів.
                   Відчуйте справжній смак життя з "Beer King". Чекаємо на вас!
                 </p>
-                <p className="about-delivery">
-                  Доставка по місту Хмельницький, від 600 грн доставка
-                  безкоштовна.
-                </p>
               </div>
+              <p className="about-delivery">
+                Доставка по місту Хмельницький, від 600 грн доставка
+                безкоштовна.
+              </p>
               <div className="about-contact">
                 <ul className="about-contact-list">
                   <li className="about-contact-item">
