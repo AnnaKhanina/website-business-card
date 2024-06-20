@@ -743,6 +743,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 .about-icon {
   width: 24px;
   height: 24px;
+  padding-right: 5px;
 }
 
 .hide-arrows .react-multiple-carousel__arrow {

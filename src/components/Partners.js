@@ -66,8 +66,7 @@ export const Partners = () => {
               {isMobile && (
                 <Button
                   onClick={toggleExpand}
-                  className="partners-toggle-button"
-                  // className="btn btn-secondary partners-toggle-button"
+                  className="btn btn-secondary partners-toggle-button"
                 >
                   {isExpanded ? 'Згорнути' : 'Показати всіх'}
                 </Button>
