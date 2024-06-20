@@ -13,6 +13,7 @@ import {
   TelephoneFill,
   Calendar2,
 } from 'react-bootstrap-icons';
+import car from '../assets/img/icons/car.svg';
 
 Modal.setAppElement('#root');
 
@@ -107,12 +108,16 @@ export const About = () => {
                   <br />
                   Ми слідкуємо за якістю та прислухаємося до своїх клієнтів.
                   Відчуйте справжній смак життя з "Beer King". Чекаємо на вас!
+                  <br />
+                  <img src={car} alt="car icon" />
+                  Доставка по місту Хмельницький, від 600 грн доставка
+                  безкоштовна.
                 </p>
               </div>
-              <p className="about-delivery">
+              {/* <p className="about-delivery">
                 Доставка по місту Хмельницький, від 600 грн доставка
                 безкоштовна.
-              </p>
+              </p> */}
               <div className="about-contact">
                 <ul className="about-contact-list">
                   <li className="about-contact-item">
