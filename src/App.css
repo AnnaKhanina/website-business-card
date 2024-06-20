@@ -355,7 +355,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 
 .products {
   margin-top: 0;
-  padding: 150px 0 100px 0;
+  padding: 180px 0 100px 0;
   position: relative;
   background-image: url('./assets/img/black-brick1.jpg');
   background-repeat:no-repeat;
@@ -444,6 +444,11 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 
 .products-text {
   color: #fff;
+  text-align: justify;
+}
+
+.products-tel {
+  color: gold;
 }
 
 /* beer */
@@ -743,7 +748,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 .about-icon {
   width: 24px;
   height: 24px;
-  padding-right: 5px;
+  margin-right: 10px;
 }
 
 .hide-arrows .react-multiple-carousel__arrow {
@@ -785,7 +790,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 
 .close-button {
   margin-top: 10px;
-  padding: 10px 20px;
+  padding: 5px 10px;
   background-color: gold;
   color: white;
   border: none;
