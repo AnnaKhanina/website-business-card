@@ -88,7 +88,7 @@
 //   );
 // };
 
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Container, Row, Col, Tab, Nav } from 'react-bootstrap';
 import { BeerCard } from './BeerCard';
 import { CyderCard } from './CyderCard';
@@ -163,8 +163,10 @@ export const Products = () => {
                             <CyderCard
                               key={index}
                               {...cyder}
-                              isActive={activeCard === index}
-                              onClick={() => handleCardClick(index)}
+                              isActive={activeCard === index + beers.length}
+                              onClick={() =>
+                                handleCardClick(index + beers.length)
+                              }
                             />
                           ))}
                         </Row>
@@ -175,8 +177,15 @@ export const Products = () => {
                             <WineCard
                               key={index}
                               {...wine}
-                              isActive={activeCard === index}
-                              onClick={() => handleCardClick(index)}
+                              isActive={
+                                activeCard ===
+                                index + beers.length + cyders.length
+                              }
+                              onClick={() =>
+                                handleCardClick(
+                                  index + beers.length + cyders.length
+                                )
+                              }
                             />
                           ))}
                         </Row>

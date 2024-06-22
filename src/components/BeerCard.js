@@ -39,6 +39,7 @@
 //   );
 // };
 
+import React from 'react';
 import { Col } from 'react-bootstrap';
 import crown from '../assets/img/icons/crown.png';
 import glass from '../assets/img/icons/glass.png';
