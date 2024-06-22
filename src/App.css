@@ -817,9 +817,10 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   margin: 0 auto 15px auto;
 }
 
- .about-text-wrap {
+.about-text-wrap,
+.about-contact {
   padding: 16px;
- }
+}
 
 .about-text {
   color: #B8B8B8;
@@ -846,15 +847,19 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 
  .about-contact-phone {
   margin-bottom: 20px;
+ }
+
+.about-tel {
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   font-weight: 700;
   color: #fff;
- }
+  text-decoration: none;
+}
 
-.about-contact-phone:hover,
-.about-contact-phone:focus {
+.about-tel:hover,
+.about-tel:focus {
   color: gold;
   cursor: pointer;
 }
