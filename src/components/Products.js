@@ -103,6 +103,12 @@ import TrackVisibility from 'react-on-screen';
 export const Products = () => {
   const [activeCard, setActiveCard] = useState(null);
 
+  const handleCardClick = (index) => {
+    setActiveCard((prevActiveCard) =>
+      prevActiveCard === index ? null : index
+    );
+  };
+
   return (
     <section className="products" id="products">
       <Container>
@@ -141,47 +147,38 @@ export const Products = () => {
                     >
                       <Tab.Pane eventKey="first">
                         <Row>
-                          {beers.map((beer, index) => {
-                            return (
-                              <BeerCard
-                                key={index}
-                                index={index}
-                                {...beer}
-                                activeCard={activeCard}
-                                setActiveCard={setActiveCard}
-                              />
-                            );
-                          })}
+                          {beers.map((beer, index) => (
+                            <BeerCard
+                              key={index}
+                              {...beer}
+                              isActive={activeCard === index}
+                              onClick={() => handleCardClick(index)}
+                            />
+                          ))}
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
                         <Row>
-                          {cyders.map((cyder, index) => {
-                            return (
-                              <CyderCard
-                                key={index}
-                                index={index}
-                                {...cyder}
-                                activeCard={activeCard}
-                                setActiveCard={setActiveCard}
-                              />
-                            );
-                          })}
+                          {cyders.map((cyder, index) => (
+                            <CyderCard
+                              key={index}
+                              {...cyder}
+                              isActive={activeCard === index}
+                              onClick={() => handleCardClick(index)}
+                            />
+                          ))}
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
                         <Row>
-                          {wines.map((wine, index) => {
-                            return (
-                              <WineCard
-                                key={index}
-                                index={index}
-                                {...wine}
-                                activeCard={activeCard}
-                                setActiveCard={setActiveCard}
-                              />
-                            );
-                          })}
+                          {wines.map((wine, index) => (
+                            <WineCard
+                              key={index}
+                              {...wine}
+                              isActive={activeCard === index}
+                              onClick={() => handleCardClick(index)}
+                            />
+                          ))}
                         </Row>
                       </Tab.Pane>
                     </Tab.Content>

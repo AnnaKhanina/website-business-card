@@ -52,20 +52,14 @@ export const BeerCard = ({
   beerFactory,
   description,
   imgUrl,
-  activeCard,
-  setActiveCard,
-  index,
+  isActive,
+  onClick,
 }) => {
-  const isActive = activeCard === index;
-
   return (
     <Col size={12} sm={6} md={4}>
       <div
         className={`beer-imgbx ${isActive ? 'active' : ''}`}
-        onClick={() => setActiveCard(isActive ? null : index)}
-        tabIndex="0"
-        onFocus={() => setActiveCard(index)}
-        onBlur={() => setActiveCard(null)}
+        onClick={onClick}
       >
         <img src={imgUrl} alt={title} />
         <p className="beer-title">{beerTitle}</p>
