@@ -147,14 +147,21 @@ select:focus {
 
 nav.navbar {
   padding: 20px 0;
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
   top: 0;
   margin: 0;
   z-index: 100;
   transition: 0.32s ease-in-out;
   background-color: #2c2c2c;
-  border-bottom: solid 2px #fff;
+  border-bottom: solid 2px #fff;  
+}
+
+.navbar {
+  font-size: 25px;
+  margin-left: 10px;
+  transition: 0.3s ease-in-out;
+  line-height: 1;
 }
 
 .nav-brand-bx {
@@ -355,7 +362,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 
 .products {
   margin-top: 0;
-  padding: 180px 0 100px 0;
+  padding: 100px 0 100px 0;
   position: relative;
   background-image: url('./assets/img/black-brick1.jpg');
   background-repeat:no-repeat;
@@ -372,6 +379,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 }
 
 .products h3,
+.partners h3,
 .about h3 {
   color: #fff;
   font-weight: 700;
@@ -823,19 +831,10 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 
 .about-contact-list {
   display: flex;
-  flex-direction: column;
-  /* list-style: none; */
+  flex-direction: column;  
   text-align: center;
 }
 
-/* .about-contact-item {
-  margin-bottom: 20px;
-  font-size: 18px;
-  letter-spacing: 0.8px;
-  line-height: 1.5em;
-  font-weight: 700;
-  color: #fff;
-} */
  .about-contact-calendar {
   margin-bottom: 20px;
   font-size: 18px;
@@ -854,15 +853,11 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   color: #fff;
  }
 
-/* .about-contact-item:hover,
-.about-contact-item:focus {
+.about-contact-phone:hover,
+.about-contact-phone:focus {
   color: gold;
   cursor: pointer;
-} */
-
-/* .about-contact-item:last-child {
-  margin-bottom: 0;
-} */
+}
 
 .about-adress {
   color: #fff;
@@ -876,25 +871,12 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   color: gold;
 }
 
-.about p svg,
-.navbar {
-  font-size: 25px;
-  margin-left: 10px;
-  transition: 0.3s ease-in-out;
-  line-height: 1;
-}
-
-.about p:hover svg {
-  margin-left: 25px;
-}
-
 .adress {
   color: #fff;
   text-decoration: none;
   font-size: 20px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
-  margin-left: 35px;
 }
 
 .adress:hover,
@@ -903,11 +885,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 }
 
 .about-delivery {
-  color: #B8B8B8;
-  font-size: 18px;
-  line-height: 1.5em;
-  font-weight: 600;
-  margin: 0 10px 10px 10px;
+  color: #fff;  
 }
 
 .about-icon {

@@ -29,6 +29,7 @@ export const Partners = () => {
           <div className="col-12">
             <div className="partners-bx wow zoomIn">
               <h2>Наші партнери</h2>
+              <h3>Приєднуйтесь</h3>
               <Row>
                 {partners
                   .slice(0, isMobile && !isExpanded ? 2 : partners.length)
