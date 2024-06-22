@@ -616,7 +616,6 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   transition: 0.4s ease-in-out;
 }
 
-.beer-imgbx.active::before,
 .beer-imgbx:hover::before,
 .beer-imgbx:focus::before {
   height: 100%;
@@ -657,7 +656,6 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   width: 100%;
 }
 
-.beer-imgbx.active .beer-txtx,
 .beer-imgbx:hover .beer-txtx,
 .beer-imgbx:focus .beer-txtx {
   top: 45%;
@@ -699,7 +697,6 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     margin: 8px;
   }
 
-  .beer-imgbx.active .beer-txtx,
   .beer-imgbx:hover .beer-txtx,
   .beer-imgbx:focus .beer-txtx {
     top: 50%;
@@ -725,7 +722,6 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     margin: 14px;
   }
 
-  .beer-imgbx.active .beer-txtx,
   .beer-imgbx:hover .beer-txtx,
   .beer-imgbx:focus .beer-txtx {
     top: 45%;
@@ -812,13 +808,16 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   position: relative;
 }
 
+.hide-arrows .react-multiple-carousel__arrow {
+  display: none !important;
+}
+
 .about-img {
   width: 70%;
   margin: 0 auto 15px auto;
 }
 
-.about-text-wrap,
-.about-contact {
+.about-text-wrap {
   padding: 16px;
 }
 
@@ -836,47 +835,43 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   text-align: center;
 }
 
- .about-contact-calendar {
-  margin-bottom: 20px;
-  font-size: 18px;
-  letter-spacing: 0.8px;
-  line-height: 1.5em;
-  font-weight: 700;
-  color: #fff;
+ .about-contact-calendar,
+ .about-contact-phone,
+ .about-adress {
+    margin-bottom: 20px;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    font-weight: 700;
+    color: #fff;
  }
 
- .about-contact-phone {
-  margin-bottom: 20px;
- }
-
-.about-tel {
-  font-size: 18px;
-  letter-spacing: 0.8px;
-  line-height: 1.5em;
-  font-weight: 700;
+.about-tel {  
   color: #fff;
   text-decoration: none;
 }
 
 .about-tel:hover,
-.about-tel:focus {
+.about-tel:focus,
+.about-adress:hover,
+.about-adress:focus {
   color: gold;
   cursor: pointer;
 }
 
-.about-adress {
+/* .about-adress {
   color: #fff;
   font-weight: 700;
   font-size: 20px; 
   letter-spacing: 0.8px;
-}
+} */
 
-.about-adress:hover,
+/* .about-adress:hover,
 .about-adress:focus {
   color: gold;
-}
+} */
 
-.adress {
+/* .adress {
   color: #fff;
   text-decoration: none;
   font-size: 20px;
@@ -887,7 +882,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 .adress:hover,
 .adress:focus {
   color: gold;
-}
+} */
 
 .about-delivery {
   color: #fff;  
@@ -897,10 +892,6 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   width: 24px;
   height: 24px;
   margin-right: 10px;
-}
-
-.hide-arrows .react-multiple-carousel__arrow {
-  display: none !important;
 }
 
 .about-modal {

@@ -109,8 +109,6 @@ export const About = () => {
                   Ми слідкуємо за якістю та прислухаємося до своїх клієнтів.
                   Відчуйте справжній смак життя з "Beer King". Чекаємо на вас!
                 </p>
-              </div>
-              <div className="about-contact">
                 <div className="about-contact-list">
                   <div className="about-contact-calendar">
                     {' '}
@@ -118,15 +116,18 @@ export const About = () => {
                     11:00 - 22:00
                   </div>
                   <div className="about-contact-phone">
-                    <a href="tel:+380730744434">
+                    <a href="tel:+380730744434" className="about-tel">
                       <TelephoneFill
-                        className="about-tel"
                         size={24}
                         style={{ paddingRight: '5px' }}
                       />
                       +380 730 744 434
                     </a>
                   </div>
+                </div>
+                <div className="about-delivery">
+                  <img src={car} alt="car icon" className="about-icon" />
+                  Доставка по місту від 600 грн безкоштовна.
                 </div>
                 <div className="about-adress">
                   <a
@@ -136,12 +137,11 @@ export const About = () => {
                     м.Хмельницький, вул.Залізняка 8/3
                   </a>
                 </div>
-                <div className="about-delivery">
-                  <img src={car} alt="car icon" className="about-icon" />
-                  Доставка по місту від 600 грн безкоштовна.
-                </div>
               </div>
             </div>
+            {/* <div className="about-contact"> */}
+
+            {/* </div> */}
             <Modal
               isOpen={isOpen}
               onRequestClose={() => {
