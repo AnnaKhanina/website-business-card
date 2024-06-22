@@ -39,7 +39,6 @@
 //   );
 // };
 
-import { useState } from 'react';
 import { Col } from 'react-bootstrap';
 import crown from '../assets/img/icons/crown.png';
 import glass from '../assets/img/icons/glass.png';
@@ -65,6 +64,8 @@ export const BeerCard = ({
         className={`beer-imgbx ${isActive ? 'active' : ''}`}
         onClick={() => setActiveCard(isActive ? null : index)}
         tabIndex="0"
+        onFocus={() => setActiveCard(index)}
+        onBlur={() => setActiveCard(null)}
       >
         <img src={imgUrl} alt={title} />
         <p className="beer-title">{beerTitle}</p>
