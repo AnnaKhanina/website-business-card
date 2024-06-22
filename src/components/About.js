@@ -118,17 +118,17 @@ export const About = () => {
                 </p>
               </div>
               <div className="about-contact">
-                <ul className="about-contact-list">
-                  <li className="about-contact-item">
-                    <TelephoneFill size={24} style={{ paddingRight: '5px' }} />
-                    +380 730 744 434
-                  </li>
-                  <li className="about-contact-item">
+                <div className="about-contact-list">
+                  <div className="about-contact-calendar">
                     {' '}
                     <Calendar2 size={24} style={{ paddingRight: '5px' }} />
                     11:00 - 22:00
-                  </li>
-                </ul>
+                  </div>
+                  <div className="about-contact-phone">
+                    <TelephoneFill size={24} style={{ paddingRight: '5px' }} />
+                    +380 730 744 434
+                  </div>
+                </div>
                 <p className="about-adress">
                   Наливаємо за адресою:
                   <ArrowRightCircle size={30} />
@@ -167,7 +167,11 @@ export const About = () => {
                     }}
                     className="close-button"
                   >
-                    <img className="icon-close" src={iconClose} alt="logo" />
+                    <img
+                      className="icon-close"
+                      src={iconClose}
+                      alt="icon close"
+                    />
                   </button>
                 </div>
               )}

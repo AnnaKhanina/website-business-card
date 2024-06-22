@@ -372,8 +372,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 }
 
 .products h3,
-.about h3,
-.partners h3 {
+.about h3 {
   color: #fff;
   font-weight: 700;
   font-size: 20px;
@@ -823,28 +822,47 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 }
 
 .about-contact-list {
-  list-style: none;
+  display: flex;
+  flex-direction: column;
+  /* list-style: none; */
   text-align: center;
 }
 
-.about-contact-item {
+/* .about-contact-item {
   margin-bottom: 20px;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   font-weight: 700;
   color: #fff;
-}
+} */
+ .about-contact-calendar {
+  margin-bottom: 20px;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  font-weight: 700;
+  color: #fff;
+ }
 
-.about-contact-item:hover,
+ .about-contact-phone {
+  margin-bottom: 20px;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  font-weight: 700;
+  color: #fff;
+ }
+
+/* .about-contact-item:hover,
 .about-contact-item:focus {
   color: gold;
   cursor: pointer;
-}
+} */
 
-.about-contact-item:last-child {
+/* .about-contact-item:last-child {
   margin-bottom: 0;
-}
+} */
 
 .about-adress {
   color: #fff;
@@ -948,6 +966,13 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   right: 10px; 
 }
 
+@media (min-width: 991px) {
+  .about-contact-list {
+    flex-direction: row;
+    gap: 15px;
+  }
+}
+
 /* Contact */
 
 .contact { 
@@ -970,6 +995,13 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   font-size: 35px;
   font-weight: 700;
   margin-bottom: 30px;
+  color: #2c2c2c;
+}
+
+.contact h3 {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 20px;
   color: #2c2c2c;
 }
 

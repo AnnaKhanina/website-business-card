@@ -118,6 +118,7 @@ export const Contact = () => {
                   }
                 >
                   <h2>Будемо на зв'язку</h2>
+                  <h3>Відкрити до співпраці</h3>
                   <form onSubmit={handleSubmit}>
                     <Row>
                       <Col size={12} sm={6} className="px-1">
