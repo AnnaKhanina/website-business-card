@@ -836,8 +836,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 }
 
  .about-contact-calendar,
- .about-contact-phone,
- .about-adress,
+ .about-contact-phone, 
  .about-delivery {
     margin-bottom: 20px;
     font-size: 18px;
@@ -854,40 +853,20 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 
 .about-tel:hover,
 .about-tel:focus,
-.about-adress:hover,
-.about-adress:focus {
+.about-adress a:hover,
+.about-adress a:focus {
   color: gold;
   cursor: pointer;
 }
 
-/* .about-adress {
-  color: #fff;
-  font-weight: 700;
-  font-size: 20px; 
-  letter-spacing: 0.8px;
-} */
-
-/* .about-adress:hover,
-.about-adress:focus {
-  color: gold;
-} */
-
 .about-adress a {
   color: #fff;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
+  font-weight: 700;
 }
-
-.about-adress a:hover,
-.about-adress a:focus {
-  color: gold;
-}
-
-/* .about-delivery {
-  color: #fff;  
-} */
 
 .about-icon {
   width: 24px;
