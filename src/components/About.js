@@ -112,7 +112,32 @@ export const About = () => {
               </div>
               <section className="about-contact">
                 <div className="about-contact-bx">
-                  <div className="about-contact-calendar">
+                  <ul className="about-contact-list">
+                    <li className="about-contact-list-item">
+                      <Calendar2 size={24} style={{ paddingRight: '5px' }} />
+                      11:00 - 22:00
+                    </li>
+                    <li className="about-contact-list-item">
+                      <a href="tel:+380730744434" className="about-tel">
+                        <TelephoneFill
+                          size={24}
+                          style={{ paddingRight: '5px' }}
+                        />
+                        +380 730 744 434
+                      </a>
+                    </li>
+                    <li className="about-contact-list-item">
+                      {' '}
+                      <img src={car} alt="car icon" className="about-icon" />
+                      Доставка по місту від 600 грн безкоштовна.
+                    </li>
+                    <li className="about-contact-list-item">
+                      <a href="https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%97%D0%B0%D0%BB%D0%B8%D0%B7%D0%BD%D1%8F%D0%BA%D0%B0,+8,+%D0%A5%D0%BC%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D1%86%D0%BA%D0%B8%D0%B9,+%D0%A5%D0%BC%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D1%86%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+29000/@49.4488455,27.0062596,19z/data=!3m1!4b1!4m6!3m5!1s0x4732070b2fd796f3:0x727ba0dda3d340fd!8m2!3d49.4488446!4d27.0069033!16s%2Fg%2F11bw3_3txg?entry=ttu">
+                        м.Хмельницький, вул.Залізняка 8/3
+                      </a>
+                    </li>
+                  </ul>
+                  {/* <div className="about-contact-calendar">
                     {' '}
                     <Calendar2 size={24} style={{ paddingRight: '5px' }} />
                     11:00 - 22:00
@@ -130,6 +155,9 @@ export const About = () => {
                     <img src={car} alt="car icon" className="about-icon" />
                     Доставка по місту від 600 грн безкоштовна.
                   </div>
+                  <a href="https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%97%D0%B0%D0%BB%D0%B8%D0%B7%D0%BD%D1%8F%D0%BA%D0%B0,+8,+%D0%A5%D0%BC%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D1%86%D0%BA%D0%B8%D0%B9,+%D0%A5%D0%BC%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D1%86%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+29000/@49.4488455,27.0062596,19z/data=!3m1!4b1!4m6!3m5!1s0x4732070b2fd796f3:0x727ba0dda3d340fd!8m2!3d49.4488446!4d27.0069033!16s%2Fg%2F11bw3_3txg?entry=ttu">
+                    м.Хмельницький, вул.Залізняка 8/3
+                  </a> */}
                   {/* <div className="about-adress">
                   <a href="https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%97%D0%B0%D0%BB%D0%B8%D0%B7%D0%BD%D1%8F%D0%BA%D0%B0,+8,+%D0%A5%D0%BC%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D1%86%D0%BA%D0%B8%D0%B9,+%D0%A5%D0%BC%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D1%86%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+29000/@49.4488455,27.0062596,19z/data=!3m1!4b1!4m6!3m5!1s0x4732070b2fd796f3:0x727ba0dda3d340fd!8m2!3d49.4488446!4d27.0069033!16s%2Fg%2F11bw3_3txg?entry=ttu">
                     м.Хмельницький, вул.Залізняка 8/3
@@ -138,17 +166,14 @@ export const About = () => {
                   <div className="about-adress">
                     <iframe
                       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2530.8422125376726!2d27.006259615733326!3d49.4488455793486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4732070b2fd796f3%3A0x727ba0dda3d340fd!2z0YPQuy4g0JrQsNGA0L7QstCwLCA4LCAzLCDQodCw0LLRgdC60LLQsCwgMjkwMDA!5e0!3m2!1sru!2sua!4v1687992236719!5m2!1sru!2sua"
-                      width="600"
-                      height="450"
+                      width="400"
+                      height="250"
                       style={{ border: 0 }}
                       allowFullScreen
                       loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"
                       title="Google Maps"
                     ></iframe>
-                    <a href="https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%97%D0%B0%D0%BB%D0%B8%D0%B7%D0%BD%D1%8F%D0%BA%D0%B0,+8,+%D0%A5%D0%BC%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D1%86%D0%BA%D0%B8%D0%B9,+%D0%A5%D0%BC%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D1%86%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+29000/@49.4488455,27.0062596,19z/data=!3m1!4b1!4m6!3m5!1s0x4732070b2fd796f3:0x727ba0dda3d340fd!8m2!3d49.4488446!4d27.0069033!16s%2Fg%2F11bw3_3txg?entry=ttu">
-                      м.Хмельницький, вул.Залізняка 8/3
-                    </a>
                   </div>
                 </div>
               </section>

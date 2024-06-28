@@ -843,13 +843,39 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   margin-top: 50px;
 }
 
-.about-contact-list {
+/* .about-contact-list {
   display: flex;
   flex-direction: column;  
   text-align: center;
+} */
+
+.about-contact-bx {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
 }
 
- .about-contact-calendar,
+.about-contact-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  max-width: 300px;
+
+}
+
+.about-contact-list-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  font-weight: 700;
+  color: #fff;
+}
+
+ /* .about-contact-calendar,
  .about-contact-phone, 
  .about-delivery {
     margin-bottom: 20px;
@@ -858,7 +884,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     line-height: 1.5em;
     font-weight: 700;
     color: #fff;
- }
+ } */
 
 .about-tel {  
   color: #fff;
@@ -871,6 +897,10 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 .about-adress a:focus {
   color: gold;
   cursor: pointer;
+}
+
+.about-adress {
+  max-width: 600px;  
 }
 
 .about-adress a {
