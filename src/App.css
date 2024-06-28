@@ -837,7 +837,8 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 
  .about-contact-calendar,
  .about-contact-phone,
- .about-adress {
+ .about-adress,
+ .about-delivery {
     margin-bottom: 20px;
     font-size: 18px;
     letter-spacing: 0.8px;
@@ -871,7 +872,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   color: gold;
 } */
 
-/* .adress {
+.about-adress a {
   color: #fff;
   text-decoration: none;
   font-size: 20px;
@@ -879,14 +880,14 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   line-height: 1.5em;
 }
 
-.adress:hover,
-.adress:focus {
+.about-adress a:hover,
+.about-adress a:focus {
   color: gold;
-} */
-
-.about-delivery {
-  color: #fff;  
 }
+
+/* .about-delivery {
+  color: #fff;  
+} */
 
 .about-icon {
   width: 24px;
