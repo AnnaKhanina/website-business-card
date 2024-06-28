@@ -829,6 +829,20 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   text-indent: 20px;
 }
 
+.about-contact {
+  padding: 0 0 50px 0;
+  /* background-color: transparent; */
+}
+
+.about-contact-bx {
+  background: gold;
+  border-radius: 64px;
+  border: 2px solid #fff;
+  text-align: center;
+  padding: 20px 50px;
+  margin-top: 50px;
+}
+
 .about-contact-list {
   display: flex;
   flex-direction: column;  
