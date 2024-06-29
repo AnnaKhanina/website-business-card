@@ -849,12 +849,12 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  max-width: 300px;
+  /* max-width: 300px; */
 }
 
 .about-contact-list-item {
   display: flex;
-  align-items: center;
+  align-items: start;
   margin-bottom: 10px;
   font-size: 18px;
   letter-spacing: 0.8px;
@@ -884,14 +884,21 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   cursor: pointer;
 }
 
-.about-adress {
+/* .about-adress {
   max-width: 600px;  
+} */
+
+.about-adress-maps {
+  width: 300;
+  height: 250;
+  border-radius: 34px;
+  border: 2px solid #fff;
 }
 
 .about-icon {
   width: 24px;
   height: 24px;
-  padding-right: 5px;
+  margin-right: 5px;
 }
 
 .about-modal {
