@@ -830,38 +830,33 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 }
 
 .about-contact {
-  padding: 0 0 50px 0;
-  /* background-color: transparent; */
+  padding: 0 0 50px 0; 
 }
 
 .about-contact-bx {
+  display: flex;
+  flex-direction: column;
   background: gold;
   border-radius: 64px;
   border: 2px solid #fff;
   text-align: center;
   padding: 20px 50px;
-  margin-top: 50px;
+ 
 }
 
-/* .about-contact-list {
+/* .about-contact-bx {
   display: flex;
-  flex-direction: column;  
-  text-align: center;
-} */
-
-.about-contact-bx {
-  display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
   padding: 20px;
-}
+} */
 
 .about-contact-list {
   list-style-type: none;
   padding: 0;
   margin: 0;
   max-width: 300px;
-
 }
 
 .about-contact-list-item {
@@ -872,7 +867,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   letter-spacing: 0.8px;
   line-height: 1.5em;
   font-weight: 700;
-  color: #fff;
+  color: #2c2c2c;
 }
 
  /* .about-contact-calendar,
@@ -965,7 +960,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 }
 
 @media (min-width: 991px) {
-  .about-contact-list {
+  .about-contact-bx {
     flex-direction: row;
     gap: 25px;
     justify-content: center;
