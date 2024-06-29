@@ -8,11 +8,7 @@ import about2 from '../assets/img/beerking2.jpg';
 import about3 from '../assets/img/beerking3.jpg';
 import about4 from '../assets/img/beerking4.jpg';
 import iconClose from '../assets/img/icons/modal-close.svg';
-import {
-  // ArrowRightCircle,
-  TelephoneFill,
-  Calendar2,
-} from 'react-bootstrap-icons';
+import { TelephoneFill, Calendar2 } from 'react-bootstrap-icons';
 import car from '../assets/img/icons/car.svg';
 
 Modal.setAppElement('#root');
@@ -134,15 +130,15 @@ export const About = () => {
                     <li className="about-contact-list-item">
                       {' '}
                       <img src={car} alt="car icon" className="about-icon" />
-                      Доставка по місту від 600 грн безкоштовна.
+                      {/* Доставка по місту від 600 грн безкоштовна. */}
+                      <h4 className="about-contact-adress">
+                        Доставка по місту від 600 грн безкоштовна
+                      </h4>
                     </li>
                   </ul>
                   <div className="about-adress">
                     <iframe
                       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2530.8422125376726!2d27.006259615733326!3d49.4488455793486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4732070b2fd796f3%3A0x727ba0dda3d340fd!2z0YPQuy4g0JrQsNGA0L7QstCwLCA4LCAzLCDQodCw0LLRgdC60LLQsCwgMjkwMDA!5e0!3m2!1sru!2sua!4v1687992236719!5m2!1sru!2sua"
-                      // width="500"
-                      // height="250"
-                      // style={{ border: 0 }}
                       allowFullScreen
                       loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"
