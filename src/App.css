@@ -903,7 +903,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   max-width: 600px;  
 }
 
-.about-adress a {
+.about-contact-list-item .about-contact-adress {
   color: #fff;
   text-decoration: none;
   font-size: 18px;
