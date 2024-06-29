@@ -129,7 +129,7 @@ export const About = () => {
                       <a href="tel:+380730744434" className="about-tel">
                         <TelephoneFill
                           size={24}
-                          style={{ paddingRight: '5px' }}
+                          style={{ paddingRight: '5px', color: 'black' }}
                         />
                         +380 730 744 434
                       </a>

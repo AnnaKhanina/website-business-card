@@ -881,8 +881,17 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     color: #fff;
  } */
 
+.about-contact-list-item .about-contact-adress {
+  color: #2c2c2c;
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  font-weight: 700;
+}
+
 .about-tel {  
-  color: #fff;
+  color: #2c2c2c;
   text-decoration: none;
 }
 
@@ -898,14 +907,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   max-width: 600px;  
 }
 
-.about-contact-list-item .about-contact-adress {
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
-  letter-spacing: 0.8px;
-  line-height: 1.5em;
-  font-weight: 700;
-}
+
 
 .about-icon {
   width: 24px;
