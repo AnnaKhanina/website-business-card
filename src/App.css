@@ -143,11 +143,10 @@ select:focus {
   bottom: 80px;
 }
 
-/************ Navbar Css ************/
+/* Navbar */
 
 nav.navbar {
-  padding: 20px 0;
-  /* position: fixed; */
+  padding: 20px 0;  
   width: 100%;
   top: 0;
   margin: 0;
@@ -364,7 +363,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   margin-top: 0;
   padding: 100px 0 100px 0;
   position: relative;
-  background-image: url('./assets/img/black-brick1.jpg');
+  background-image: url('./assets/img/black-brick.jpg');
   background-repeat:no-repeat;
   background-size: cover;
   border-bottom: 2px solid #fff;  
@@ -379,8 +378,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 }
 
 .products h3,
-.partners h3,
-.about h3 {
+.partners h3 {
   color: #fff;
   font-weight: 700;
   font-size: 20px;
@@ -458,141 +456,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   color: gold;
 }
 
-/* beer */
-
- /* .beer-imgbx {
-   position: relative;
-   border-radius: 30px;
-   border: 2px solid #fff;
-   overflow: hidden;
-   margin-bottom: 24px;
-   background: rgb(15, 15, 15);
-   background: linear-gradient(0deg, rgba(15, 15, 15, 1) 22%, rgba(163, 161, 147, 1) 100%); 
- }
-
- .beer-imgbx::before {
-  content: "";
-  background: rgb(15, 15, 15);
-  background: linear-gradient(0deg, rgba(15, 15, 15, 1) 22%, rgba(163, 161, 147, 1) 100%);
-  opacity: 0.97;
-  position: absolute;
-  width: 100%;
-  height: 0;
-  transition: 0.4s ease-in-out;  
-}
-
-.beer-imgbx:hover::before,
-.beer-imgbx:focus::before {
-  height: 100%;
-}
-
-.beer-title {
-  color: gold;
-  font-size: 20px;
-  font-weight: 700;
-  margin-top: 10px;
-}
-
-.strength,
-.density,
-.factory {
-  font-weight: 700; 
-  color: #fff;
-}
-
-.density-beer,
-.strength-beer,
-.sugar {
-  color: #ecd92e;
-}
-
-.factory-beer {
-  color: #fff;
-}
-
-.beer-txtx {
-  position: absolute; 
-  text-align: center;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: 0.5s ease-in-out;
-  opacity: 0;
-  width: 100%;
- }
-
-.beer-imgbx:hover .beer-txtx,
-.beer-imgbx:focus .beer-txtx {
-  top: 45%;
-  opacity: 1;
-}
-
-.beer-txtx h4 {
-  font-size: 28px;
-  font-weight: 900;
-  letter-spacing: 0.7px;
-  line-height: 1em;
-  color: gold; 
-} 
-
- .beer-discr {
-   position: relative;
-   overflow-y: auto;
-   max-height: 250px;
-   color: #fff;
-   font-weight: 500;
-   font-size: 18px;
-   letter-spacing: 0.8px;
-   text-align: justify;
-   padding: 0 20px 10px 20px;
-   text-indent: 1em;
- }
-
- .products-icon {
-    width: auto;
-    height: 30px;
- }
-
- @media (min-width: 576px) {
-   .beer-imgbx {
-     height: 370px;
-   
-   }
-   .beer-imgbx p {
-     margin: 8px;
-   }
-  .beer-imgbx:hover .beer-txtx {
-    top: 50%;
-  }    
- }
-
- @media (min-width: 768px) {
-   .beer-imgbx {
-     height: 400px;
-   }
-   .beer-imgbx p {
-     margin: 10px;
-   }
- }
-
- @media (min-width: 1200px) {
-   .beer-imgbx {
-     height: 440px;
-   }
-   .beer-imgbx p {
-     margin: 14px;
-   }
-    .beer-imgbx:hover .beer-txtx {
-      top: 45%;
-    }
- }
-
- @media (min-width: 1400px) {
-   .beer-imgbx {
-     height: 460px;
-   }
- } */
-
+/* Beer */
 
 .beer-imgbx {
   position: relative;
@@ -829,8 +693,21 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   text-indent: 20px;
 }
 
+/* About Contact */
+
 .about-contact {
   padding: 0 0 50px 0; 
+}
+
+.about-contact-title {
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  /* margin: 14px auto 30px auto; */
+  text-align: center;
+  white-space: nowrap;
 }
 
 .about-contact-bx {
@@ -1091,7 +968,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   transition: 0.3s ease-in-out;
  } 
 
-/************ Footer Css ************/
+/* Footer */
 
 .footer {
   padding: 0 0 50px 0;

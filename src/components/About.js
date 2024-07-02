@@ -58,7 +58,6 @@ export const About = () => {
           <Col>
             <div>
               <h2 className="about-title">Про нас</h2>
-              <h3>Контакти</h3>
               <Carousel
                 responsive={responsive}
                 infinite={true}
@@ -108,6 +107,7 @@ export const About = () => {
               </div>
               <section className="about-contact">
                 <div className="about-contact-bx">
+                  <h3 className="about-contact-title">Контакти</h3>
                   <ul className="about-contact-list">
                     <li className="about-contact-list-item">
                       <h4 className="about-contact-adress">
@@ -130,7 +130,6 @@ export const About = () => {
                     <li className="about-contact-list-item">
                       {' '}
                       <img src={car} alt="car icon" className="about-icon" />
-                      {/* Доставка по місту від 600 грн безкоштовна. */}
                       <h4 className="about-contact-adress">
                         Доставка по місту від 600 грн безкоштовна
                       </h4>
