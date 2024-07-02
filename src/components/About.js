@@ -106,8 +106,8 @@ export const About = () => {
                 </p>
               </div>
               <section className="about-contact">
+                <h3 className="about-contact-title">Контакти</h3>
                 <div className="about-contact-bx">
-                  <h3 className="about-contact-title">Контакти</h3>
                   <ul className="about-contact-list">
                     <li className="about-contact-list-item">
                       <h4 className="about-contact-adress">
