@@ -365,7 +365,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   position: relative;
   background-image: url('./assets/img/black-brick.jpg');
   background-repeat:no-repeat;
-  background-size: cover;
+  background-size: contain;
   border-bottom: 2px solid #fff;  
  }
 
@@ -698,7 +698,10 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 .about-contact {
   padding: 0 0 50px 0;
   text-align: center;
- 
+  background: gold;
+  border-radius: 64px;
+  border: 2px solid #fff; 
+  padding: 20px 50px;
 }
 
 .about-contact-title {
@@ -707,23 +710,21 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   font-size: 20px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
-  margin: 14px 0 30px 0;
- 
+  margin: 14px 0 30px 0; 
   text-align: center;
   white-space: nowrap;
-  display: inline-block;
-  
+  display: inline-block;  
 }
 
 .about-contact-bx {
   display: flex;
   gap: 15px;
   flex-direction: column;
-  background: gold;
+  /* background: gold;
   border-radius: 64px;
   border: 2px solid #fff;
   text-align: center;
-  padding: 20px 50px;
+  padding: 20px 50px; */
   align-items: center;
 }
 
