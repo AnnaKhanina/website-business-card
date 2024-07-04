@@ -517,8 +517,14 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   left: 50%;
   transform: translate(-50%, -50%);
   transition: 0.5s ease-in-out;
-  opacity: 0;
+  /* opacity: 0; */
+  opacity: 1;
   width: 100%;
+}
+
+.beer-txtx.hidden {
+  opacity: 0;
+  display: none;
 }
 
 .beer-imgbx:hover .beer-txtx,

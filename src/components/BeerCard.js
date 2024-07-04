@@ -54,10 +54,10 @@ export const BeerCard = ({
   description,
   imgUrl,
 }) => {
-  const [showDescription, setShowDescription] = useState(false);
+  const [showOverlay, setShowOverlay] = useState(false);
 
-  const toggleDescription = () => {
-    setShowDescription(!showDescription);
+  const toggleOverlay = () => {
+    setShowOverlay(!showOverlay);
   };
 
   return (
@@ -65,9 +65,9 @@ export const BeerCard = ({
       <div
         className="beer-imgbx"
         tabIndex="0"
-        onMouseEnter={() => setShowDescription(true)}
-        onMouseLeave={() => setShowDescription(false)}
-        onClick={toggleDescription}
+        onMouseEnter={() => setShowOverlay(true)}
+        onMouseLeave={() => setShowOverlay(false)}
+        onClick={toggleOverlay}
       >
         <img src={imgUrl} alt={title} />
         <p className="beer-title">{beerTitle}</p>
@@ -81,7 +81,7 @@ export const BeerCard = ({
           <span className="factory">Виробник: </span>
           <span className="factory-beer">{beerFactory}</span>
         </p>
-        {showDescription && (
+        {showOverlay && (
           <div className="beer-txtx">
             <h4>{title}</h4>
             <p className="beer-discr">{description}</p>
