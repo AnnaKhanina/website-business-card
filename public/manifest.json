@@ -1,12 +1,27 @@
 {
   "short_name": "beerking",
   "name": "website-business-card-beerking",
-  "icons": [
+  "icons": [     
     {
-      "src": "logo2.svg",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    }    
+      "src": "android-chrome-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },  
+    {
+      "src": "apple-touch-icon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }, 
+    {
+      "src": "favicon-16x16.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "favicon-32x32.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    } 
   ],
   "start_url": "/",
   "display": "standalone",
