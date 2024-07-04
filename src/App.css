@@ -450,6 +450,9 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 .products-text {
   color: #fff;
   text-align: justify;
+  background: rgba(117, 117, 117, 0.5);
+  border-radius: 6px;
+  padding: 10px;
 }
 
 .products-tel {
@@ -517,14 +520,8 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   left: 50%;
   transform: translate(-50%, -50%);
   transition: 0.5s ease-in-out;
-  /* opacity: 0; */
-  opacity: 1;
-  width: 100%;
-}
-
-.beer-txtx.hidden {
   opacity: 0;
-  display: none;
+  width: 100%;
 }
 
 .beer-imgbx:hover .beer-txtx,
@@ -979,7 +976,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   padding: 0 0 50px 0;
   background-image: url('./assets/img/black-brick1.jpg');
   background-repeat: no-repeat;
-    background-size: cover;
+  background-size: cover;
 }
 
 .footer-logo {
