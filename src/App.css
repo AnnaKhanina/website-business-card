@@ -453,7 +453,8 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 }
 
 .products-tel {
-  color: #5e0303;
+  color: gold;
+  font-weight: 700;
 }
 
 /* Beer */
