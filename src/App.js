@@ -10,7 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import ScrollToTopButton from './components/ScrollToTopButton';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { QRCode } from 'react-qrcode-logo';
+import QRCode from 'qrcode.react';
 
 function App() {
   return (
