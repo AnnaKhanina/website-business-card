@@ -341,7 +341,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     flex-direction: column;
     align-items: center; 
     margin-top: 10px;  
-    margin-bottom: 10px; 
+    margin-bottom: 20px; 
   }
   .navbar-btn {
     margin-top: 10px;
@@ -363,7 +363,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   margin-top: 0;
   padding: 100px 0 100px 0;
   position: relative;
-  background-image: url('./assets/img/product-bg1.png');
+  background-image: url('./assets/img/product-bg3.jpg');
   background-repeat: repeat;
   background-size: contain;
   border-bottom: 2px solid #fff;  
@@ -453,7 +453,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 }
 
 .products-tel {
-  color: gold;
+  color: #5e0303;
 }
 
 /* Beer */
@@ -971,6 +971,8 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 .footer {
   padding: 0 0 50px 0;
   background-image: url('./assets/img/black-brick1.jpg');
+  background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .footer-logo {
