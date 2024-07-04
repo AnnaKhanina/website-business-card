@@ -10,6 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import ScrollToTopButton from './components/ScrollToTopButton';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { QRCode } from 'react-qrcode-logo';
 
 function App() {
   return (
@@ -19,6 +20,10 @@ function App() {
       <About />
       <Partners />
       <Contact />
+      <div>
+        <h1>QR-код для перехода на сайт</h1>
+        <QRCode value="https://beerking-khm.vercel.app/" />
+      </div>
       <Footer />
       <ScrollToTopButton />
       <ToastContainer containerId="main-toast" />
