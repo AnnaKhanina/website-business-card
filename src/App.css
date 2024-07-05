@@ -677,7 +677,8 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 }
 
 .hide-arrows .react-multiple-carousel__arrow {
-  display: none !important;
+  /* display: none !important; */
+    display: block !important;
 }
 
 .about-img {
